@@ -6,22 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - xiaohe",
-        "🇱🇻 LV 02 - xiaohe",
-        "🇱🇻 LV 03 - xiaohe",
-        "🇱🇻 LV 04 - xiaohe",
-        "🇱🇻 LV 05 - xiaohe"
+        "🇱🇻 LV 01 - port",
+        "🇱🇻 LV 02 - port",
+        "🇱🇻 LV 03 - port",
+        "🇱🇻 LV 04 - port",
+        "🇱🇻 LV 05 - port",
+        "🇱🇻 LV 06 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - xiaohe",
-        "🇱🇻 LV 02 - xiaohe",
-        "🇱🇻 LV 03 - xiaohe",
-        "🇱🇻 LV 04 - xiaohe",
-        "🇱🇻 LV 05 - xiaohe"
+        "🇱🇻 LV 01 - port",
+        "🇱🇻 LV 02 - port",
+        "🇱🇻 LV 03 - port",
+        "🇱🇻 LV 04 - port",
+        "🇱🇻 LV 05 - port",
+        "🇱🇻 LV 06 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

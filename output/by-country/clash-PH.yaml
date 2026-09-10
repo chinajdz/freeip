@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 PH 01 - xiaohe
+- name: 🇵🇭 PH 01 - port
   type: vless
   server: 149.104.109.17
   port: 2087
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 PH 01 - xiaohe
+  - 🇵🇭 PH 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 PH 01 - xiaohe
+  - 🇵🇭 PH 01 - port
 rules:
 - MATCH,PROXIES

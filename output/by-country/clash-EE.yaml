@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - xiaohe
+- name: 🇪🇪 EE 01 - port
   type: vless
   server: 94.183.170.135
   port: 443
@@ -17,7 +17,34 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 02 - xiaohe
+- name: 🇪🇪 EE 02 - port
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - port
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 04 - port
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 05 - port
   type: vless
   server: 94.183.170.135
   port: 443
@@ -30,7 +57,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 03 - xiaohe
+- name: 🇪🇪 EE 06 - port
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -39,57 +66,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 04 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 05 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - xiaohe
-  type: vless
-  server: 172.67.67.178
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇪🇪 EE 07 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 08 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 09 - xiaohe
+- name: 🇪🇪 EE 07 - port
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -103,28 +80,24 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
-  - 🇪🇪 EE 04 - xiaohe
-  - 🇪🇪 EE 05 - xiaohe
-  - 🇪🇪 EE 06 - xiaohe
-  - 🇪🇪 EE 07 - xiaohe
-  - 🇪🇪 EE 08 - xiaohe
-  - 🇪🇪 EE 09 - xiaohe
+  - 🇪🇪 EE 01 - port
+  - 🇪🇪 EE 02 - port
+  - 🇪🇪 EE 03 - port
+  - 🇪🇪 EE 04 - port
+  - 🇪🇪 EE 05 - port
+  - 🇪🇪 EE 06 - port
+  - 🇪🇪 EE 07 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
-  - 🇪🇪 EE 04 - xiaohe
-  - 🇪🇪 EE 05 - xiaohe
-  - 🇪🇪 EE 06 - xiaohe
-  - 🇪🇪 EE 07 - xiaohe
-  - 🇪🇪 EE 08 - xiaohe
-  - 🇪🇪 EE 09 - xiaohe
+  - 🇪🇪 EE 01 - port
+  - 🇪🇪 EE 02 - port
+  - 🇪🇪 EE 03 - port
+  - 🇪🇪 EE 04 - port
+  - 🇪🇪 EE 05 - port
+  - 🇪🇪 EE 06 - port
+  - 🇪🇪 EE 07 - port
 rules:
 - MATCH,PROXIES

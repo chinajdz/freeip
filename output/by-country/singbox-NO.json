@@ -6,28 +6,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe",
-        "🇳🇴 NO 05 - xiaohe",
-        "🇳🇴 NO 06 - xiaohe",
-        "🇳🇴 NO 07 - xiaohe",
-        "🇳🇴 NO 08 - xiaohe"
+        "🇳🇴 NO 01 - port",
+        "🇳🇴 NO 02 - port",
+        "🇳🇴 NO 03 - port",
+        "🇳🇴 NO 04 - port",
+        "🇳🇴 NO 05 - port",
+        "🇳🇴 NO 06 - port",
+        "🇳🇴 NO 07 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe",
-        "🇳🇴 NO 05 - xiaohe",
-        "🇳🇴 NO 06 - xiaohe",
-        "🇳🇴 NO 07 - xiaohe",
-        "🇳🇴 NO 08 - xiaohe"
+        "🇳🇴 NO 01 - port",
+        "🇳🇴 NO 02 - port",
+        "🇳🇴 NO 03 - port",
+        "🇳🇴 NO 04 - port",
+        "🇳🇴 NO 05 - port",
+        "🇳🇴 NO 06 - port",
+        "🇳🇴 NO 07 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

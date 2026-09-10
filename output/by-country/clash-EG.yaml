@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇬 EG 01 - xiaohe
+- name: 🇪🇬 EG 01 - port
   type: vless
   server: 38.54.59.209
   port: 2087
@@ -17,7 +17,7 @@ proxies:
     path: /d1000b16fe76
     headers:
       Host: 38.54.59.209
-- name: 🇪🇬 EG 02 - xiaohe
+- name: 🇪🇬 EG 02 - port
   type: vless
   server: 38.54.59.209
   port: 2087
@@ -35,14 +35,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇬 EG 01 - xiaohe
-  - 🇪🇬 EG 02 - xiaohe
+  - 🇪🇬 EG 01 - port
+  - 🇪🇬 EG 02 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇬 EG 01 - xiaohe
-  - 🇪🇬 EG 02 - xiaohe
+  - 🇪🇬 EG 01 - port
+  - 🇪🇬 EG 02 - port
 rules:
 - MATCH,PROXIES
