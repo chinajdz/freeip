@@ -5,75 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - port
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  type: ss
+  server: 194.77.229.56
+  port: 12007
+  cipher: chacha20-ietf-poly1305
+  password: 1ed0af1c413861ff
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - port
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - port
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - port
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: relay.lunetcloud.ir
-  network: ws
-  ws-opts:
-    path: /lunetnetwork
-    headers:
-      Host: relay.lunetcloud.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - port
-  - 🇦🇪 阿联酋 (UAE) 02 - port
-  - 🇦🇪 阿联酋 (UAE) 03 - port
-  - 🇦🇪 阿联酋 (UAE) 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - port
-  - 🇦🇪 阿联酋 (UAE) 02 - port
-  - 🇦🇪 阿联酋 (UAE) 03 - port
-  - 🇦🇪 阿联酋 (UAE) 04 - port
 rules:
 - MATCH,PROXIES
