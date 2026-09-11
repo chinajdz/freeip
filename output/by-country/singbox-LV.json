@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - port",
-        "🇱🇻 LV 02 - port",
-        "🇱🇻 LV 03 - port",
-        "🇱🇻 LV 04 - port"
+        "🇱🇻 LV 01 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - port",
-        "🇱🇻 LV 02 - port",
-        "🇱🇻 LV 03 - port",
-        "🇱🇻 LV 04 - port"
+        "🇱🇻 LV 01 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

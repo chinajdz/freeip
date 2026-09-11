@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - port
   type: ss
-  server: 2.56.126.121
-  port: 2
-  cipher: chacha20-ietf-poly1305
-  password: hcPtVDnxZHumuyqGtiOGtA
+  server: 132.243.255.3
+  port: 30111
+  cipher: aes-256-gcm
+  password: 78235e7dc55e9ad1
   udp: true
 - name: 🇨🇾 CY 02 - port
   type: vless
@@ -22,7 +22,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 CY 03 - port
   type: vless
   server: 194.76.154.31
@@ -34,20 +34,8 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇾 CY 04 - port
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 CY 05 - port
   type: vless
   server: 45.9.2.171
   port: 8443
@@ -56,7 +44,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: torr.wlrus.cfd
-- name: 🇨🇾 CY 06 - port
+- name: 🇨🇾 CY 05 - port
   type: vless
   server: 45.9.2.171
   port: 8443
@@ -75,7 +63,6 @@ proxy-groups:
   - 🇨🇾 CY 03 - port
   - 🇨🇾 CY 04 - port
   - 🇨🇾 CY 05 - port
-  - 🇨🇾 CY 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,6 +73,5 @@ proxy-groups:
   - 🇨🇾 CY 03 - port
   - 🇨🇾 CY 04 - port
   - 🇨🇾 CY 05 - port
-  - 🇨🇾 CY 06 - port
 rules:
 - MATCH,PROXIES

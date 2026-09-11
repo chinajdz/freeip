@@ -6,29 +6,21 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - port
   type: vless
-  server: 94.183.170.135
+  server: 45.80.108.236
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip
     headers:
-      Host: 94.183.170.135
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 - name: 🇪🇪 EE 02 - port
   type: vless
   server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 03 - port
-  type: vless
-  server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
@@ -39,25 +31,30 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
+- name: 🇪🇪 EE 03 - port
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - port
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 45.80.108.236
+  port: 443
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 - name: 🇪🇪 EE 05 - port
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - port
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -76,7 +73,6 @@ proxy-groups:
   - 🇪🇪 EE 03 - port
   - 🇪🇪 EE 04 - port
   - 🇪🇪 EE 05 - port
-  - 🇪🇪 EE 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,6 +83,5 @@ proxy-groups:
   - 🇪🇪 EE 03 - port
   - 🇪🇪 EE 04 - port
   - 🇪🇪 EE 05 - port
-  - 🇪🇪 EE 06 - port
 rules:
 - MATCH,PROXIES

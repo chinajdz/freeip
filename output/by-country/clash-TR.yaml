@@ -13,13 +13,38 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - port
-  type: ss
-  server: 188.132.232.85
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  server: 206.1.96.228
+  port: 8082
+  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 03 - port
+  type: vless
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 - port
+  type: vmess
+  server: ninja.monak2.ir
+  port: 110
+  uuid: 7034f274-c53a-4d73-9f0c-b28bac0d9e7a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - port
   type: vless
   server: 195.162.69.203
   port: 8443
@@ -36,6 +61,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - port
   - 🇹🇷 土耳其 (Turkey) 02 - port
   - 🇹🇷 土耳其 (Turkey) 03 - port
+  - 🇹🇷 土耳其 (Turkey) 04 - port
+  - 🇹🇷 土耳其 (Turkey) 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +71,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - port
   - 🇹🇷 土耳其 (Turkey) 02 - port
   - 🇹🇷 土耳其 (Turkey) 03 - port
+  - 🇹🇷 土耳其 (Turkey) 04 - port
+  - 🇹🇷 土耳其 (Turkey) 05 - port
 rules:
 - MATCH,PROXIES
