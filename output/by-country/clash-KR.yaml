@@ -5,58 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - port
-  type: vless
-  server: 162.159.140.78
-  port: 8880
-  uuid: c18fd69e-92ba-446e-981b-213dbb551593
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: billowing-wind-5b29.133-323.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 02 - port
   type: ss
   server: 141.164.45.187
-  port: 9090
+  port: 5498
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: lGqs95QkFHo2NV
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 03 - port
-  type: vless
-  server: 172.64.80.1
-  port: 8880
-  uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: misty-mouse-141d.177-f18.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 - port
+- name: 🇰🇷 韩国 (South Korea) 02 - port
   type: vmess
   server: 140.238.2.250
   port: 443
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 03 - port
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - port
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - port
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 06 - port
   type: vmess
   server: 140.238.2.250
@@ -68,72 +59,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 07 - port
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - port
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 09 - port
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 10 - port
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 11 - port
   type: ss
   server: 141.164.45.187
   port: 7002
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 12 - port
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 13 - port
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -146,12 +77,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - port
   - 🇰🇷 韩国 (South Korea) 06 - port
   - 🇰🇷 韩国 (South Korea) 07 - port
-  - 🇰🇷 韩国 (South Korea) 08 - port
-  - 🇰🇷 韩国 (South Korea) 09 - port
-  - 🇰🇷 韩国 (South Korea) 10 - port
-  - 🇰🇷 韩国 (South Korea) 11 - port
-  - 🇰🇷 韩国 (South Korea) 12 - port
-  - 🇰🇷 韩国 (South Korea) 13 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,11 +89,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - port
   - 🇰🇷 韩国 (South Korea) 06 - port
   - 🇰🇷 韩国 (South Korea) 07 - port
-  - 🇰🇷 韩国 (South Korea) 08 - port
-  - 🇰🇷 韩国 (South Korea) 09 - port
-  - 🇰🇷 韩国 (South Korea) 10 - port
-  - 🇰🇷 韩国 (South Korea) 11 - port
-  - 🇰🇷 韩国 (South Korea) 12 - port
-  - 🇰🇷 韩国 (South Korea) 13 - port
 rules:
 - MATCH,PROXIES
