@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇦🇹 AT 01 - port",
-        "🇦🇹 AT 02 - port",
-        "🇦🇹 AT 03 - port"
+        "🇦🇹 AT 02 - port"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 AT 01 - port",
-        "🇦🇹 AT 02 - port",
-        "🇦🇹 AT 03 - port"
+        "🇦🇹 AT 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

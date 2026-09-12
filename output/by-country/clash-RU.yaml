@@ -13,38 +13,31 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - port
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - port
-  type: ss
-  server: 138.124.68.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: Y2ZlN
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - port
-  type: vless
-  server: 160.153.138.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 162.159.48.32
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+  type: vless
+  server: 104.18.0.1
+  port: 443
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: all.speedtest03.ccwu.cc
+  network: ws
+  ws-opts:
     path: /
     headers:
-      Host: vms.lifetime04.workers.dev
+      Host: all.speedtest03.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +46,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - port
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
-  - 🇷🇺 俄罗斯 (Russia) 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +54,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - port
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
-  - 🇷🇺 俄罗斯 (Russia) 04 - port
 rules:
 - MATCH,PROXIES
