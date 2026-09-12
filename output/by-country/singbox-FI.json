@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - port",
-        "🇮🇪 IE 02 - port",
-        "🇮🇪 IE 03 - port"
+        "🇫🇮 FI 01 - port",
+        "🇫🇮 FI 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - port",
-        "🇮🇪 IE 02 - port",
-        "🇮🇪 IE 03 - port"
+        "🇫🇮 FI 01 - port",
+        "🇫🇮 FI 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
