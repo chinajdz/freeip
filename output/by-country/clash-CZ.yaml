@@ -6,21 +6,50 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - port
   type: vless
-  server: 172.64.53.55
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: wk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: wk1.f1w.de5.net
 - name: 🇨🇿 CZ 02 - port
   type: vless
-  server: 162.159.24.131
-  port: 80
+  server: 172.67.131.112
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇨🇿 CZ 03 - port
+  type: vless
+  server: 45.130.125.126
+  port: 443
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+- name: 🇨🇿 CZ 04 - port
+  type: vless
+  server: 172.64.158.146
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -37,6 +66,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - port
   - 🇨🇿 CZ 02 - port
+  - 🇨🇿 CZ 03 - port
+  - 🇨🇿 CZ 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +75,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - port
   - 🇨🇿 CZ 02 - port
+  - 🇨🇿 CZ 03 - port
+  - 🇨🇿 CZ 04 - port
 rules:
 - MATCH,PROXIES

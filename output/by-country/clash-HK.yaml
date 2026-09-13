@@ -6,38 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - port
   type: vmess
-  server: ejomsxptp19apygl.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ejomsxptp19apygl.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ejomsxptp19apygl.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
-  type: vmess
   server: 47.83.19.148
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -52,6 +20,77 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
+  type: vless
+  server: 103.192.179.132
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp10.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp10.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
+  type: vless
+  server: 47.239.4.246
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp10.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp10.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - port
+  type: vless
+  server: 103.101.0.73
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp10.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp10.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - port
+  type: vless
+  server: 43.132.231.159
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp10.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp10.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - port
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.pubgmobile.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +99,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - port
   - 🇭🇰 中国香港 (Hong Kong) 02 - port
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
+  - 🇭🇰 中国香港 (Hong Kong) 04 - port
+  - 🇭🇰 中国香港 (Hong Kong) 05 - port
+  - 🇭🇰 中国香港 (Hong Kong) 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +110,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - port
   - 🇭🇰 中国香港 (Hong Kong) 02 - port
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
+  - 🇭🇰 中国香港 (Hong Kong) 04 - port
+  - 🇭🇰 中国香港 (Hong Kong) 05 - port
+  - 🇭🇰 中国香港 (Hong Kong) 06 - port
 rules:
 - MATCH,PROXIES
