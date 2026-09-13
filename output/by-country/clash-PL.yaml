@@ -23,7 +23,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: pl2.lckdwn.ru
+      Host: 94.183.209.58
 - name: 🇵🇱 PL 03 - port
   type: vless
   server: 94.183.209.58
@@ -36,7 +36,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.58
+      Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 04 - port
   type: vless
   server: 94.183.209.58
@@ -63,6 +63,19 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
+- name: 🇵🇱 PL 06 - port
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +86,7 @@ proxy-groups:
   - 🇵🇱 PL 03 - port
   - 🇵🇱 PL 04 - port
   - 🇵🇱 PL 05 - port
+  - 🇵🇱 PL 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +97,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - port
   - 🇵🇱 PL 04 - port
   - 🇵🇱 PL 05 - port
+  - 🇵🇱 PL 06 - port
 rules:
 - MATCH,PROXIES
