@@ -21,62 +21,49 @@ proxies:
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - port
-  type: vless
-  server: 103.192.179.132
+  type: vmess
+  server: nomino.11hi8itbaf.workers.dev
   port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vp10.pages.dev
+  servername: nomino.11hi8itbaf.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /yoga-suggesting-recording-calls.trycloudflare.com/3aa71202-a099-49c1-99fc-6662f3335369-vm
     headers:
-      Host: vp10.pages.dev
+      Host: nomino.11hi8itbaf.workers.dev
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - port
-  type: vless
-  server: 47.239.4.246
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vp10.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /arki
     headers:
-      Host: vp10.pages.dev
+      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - port
   type: vless
-  server: 103.101.0.73
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - port
-  type: vless
-  server: 43.132.231.159
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - port
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -90,7 +77,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: www.pubgmobile.com
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,7 +88,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
   - 🇭🇰 中国香港 (Hong Kong) 04 - port
   - 🇭🇰 中国香港 (Hong Kong) 05 - port
-  - 🇭🇰 中国香港 (Hong Kong) 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,6 +98,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
   - 🇭🇰 中国香港 (Hong Kong) 04 - port
   - 🇭🇰 中国香港 (Hong Kong) 05 - port
-  - 🇭🇰 中国香港 (Hong Kong) 06 - port
 rules:
 - MATCH,PROXIES

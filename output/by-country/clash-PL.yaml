@@ -13,18 +13,17 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - port
   type: vless
-  server: 104.17.247.68
+  server: 94.183.209.58
   port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: khoda.ak-khoda.workers.dev
+      Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 03 - port
   type: vless
   server: 94.183.209.58
@@ -37,36 +36,21 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: pl2.lckdwn.ru
+      Host: 94.183.209.58
 - name: 🇵🇱 PL 04 - port
   type: vless
-  server: 104.25.22.24
+  server: 94.183.209.58
   port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 05 - port
-  type: vless
-  server: 172.67.67.178
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇵🇱 PL 06 - port
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 05 - port
   type: vless
   server: 94.183.209.59
   port: 443
@@ -79,20 +63,6 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 07 - port
-  type: vless
-  server: 104.25.146.77
-  port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,8 +73,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - port
   - 🇵🇱 PL 04 - port
   - 🇵🇱 PL 05 - port
-  - 🇵🇱 PL 06 - port
-  - 🇵🇱 PL 07 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -115,7 +83,5 @@ proxy-groups:
   - 🇵🇱 PL 03 - port
   - 🇵🇱 PL 04 - port
   - 🇵🇱 PL 05 - port
-  - 🇵🇱 PL 06 - port
-  - 🇵🇱 PL 07 - port
 rules:
 - MATCH,PROXIES

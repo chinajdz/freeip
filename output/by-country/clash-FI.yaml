@@ -15,7 +15,7 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    path: /
     headers:
       Host: c12.com
 proxy-groups:
