@@ -8,7 +8,8 @@
         "auto",
         "🇿🇦 ZA 01 - port",
         "🇿🇦 ZA 02 - port",
-        "🇿🇦 ZA 03 - port"
+        "🇿🇦 ZA 03 - port",
+        "🇿🇦 ZA 04 - port"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "outbounds": [
         "🇿🇦 ZA 01 - port",
         "🇿🇦 ZA 02 - port",
-        "🇿🇦 ZA 03 - port"
+        "🇿🇦 ZA 03 - port",
+        "🇿🇦 ZA 04 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

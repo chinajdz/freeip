@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - port
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
   type: vless
   server: 46.8.200.91
   port: 443
@@ -18,14 +39,7 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 02 - port
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+- name: 🇷🇺 俄罗斯 (Russia) 04 - port
   type: ss
   server: 46.17.42.166
   port: 50111
@@ -40,6 +54,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - port
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
+  - 🇷🇺 俄罗斯 (Russia) 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +63,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - port
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
+  - 🇷🇺 俄罗斯 (Russia) 04 - port
 rules:
 - MATCH,PROXIES
