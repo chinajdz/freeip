@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - port
   type: vless
-  server: 45.192.224.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,10 +16,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime17.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - port
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -32,18 +32,30 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - port
   type: vless
-  server: 89.22.224.146
-  port: 43788
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 04 - port
+  type: vless
+  server: 57.129.130.57
+  port: 52014
+  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +64,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - port
   - 🇦🇪 阿联酋 (UAE) 02 - port
   - 🇦🇪 阿联酋 (UAE) 03 - port
+  - 🇦🇪 阿联酋 (UAE) 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +73,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - port
   - 🇦🇪 阿联酋 (UAE) 02 - port
   - 🇦🇪 阿联酋 (UAE) 03 - port
+  - 🇦🇪 阿联酋 (UAE) 04 - port
 rules:
 - MATCH,PROXIES

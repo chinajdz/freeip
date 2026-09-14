@@ -5,8 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - port
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
   type: vmess
-  server: 93ucrn4i0pffuabk.v.3dns.vip
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
+  type: vmess
+  server: 47.76.197.72
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -14,13 +41,26 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: m01c7b2z26dtqgee.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
+      Host: m01c7b2z26dtqgee.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - port
+  type: vless
+  server: blue-rice-7142.30-346.workers.dev
+  port: 8880
+  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: blue-rice-7142.30-346.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - port
   type: vmess
   server: 47.83.19.148
   port: 443
@@ -36,21 +76,39 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
-  type: vless
-  server: 172.67.151.77
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - port
+  type: vmess
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
   port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nahan-core.fatitelegram.workers.dev
+  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
   network: ws
   ws-opts:
-    path: /sync
+    path: /ws-vmess
     headers:
-      Host: nahan-core.fatitelegram.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - port
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - port
+  type: vmess
+  server: 47.243.92.155
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mTCKUNDiGePwU3uP.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: mTCKUNDiGePwU3uP.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - port
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -62,10 +120,23 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - port
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - port
+  type: vless
+  server: 162.159.0.53
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - port
   type: vmess
   server: 8.218.184.4
   port: 443
@@ -81,51 +152,6 @@ proxies:
     path: /ws-vmess
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - port
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - port
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - port
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: www.pubgmobile.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,6 +165,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - port
   - 🇭🇰 中国香港 (Hong Kong) 07 - port
   - 🇭🇰 中国香港 (Hong Kong) 08 - port
+  - 🇭🇰 中国香港 (Hong Kong) 09 - port
+  - 🇭🇰 中国香港 (Hong Kong) 10 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,5 +180,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - port
   - 🇭🇰 中国香港 (Hong Kong) 07 - port
   - 🇭🇰 中国香港 (Hong Kong) 08 - port
+  - 🇭🇰 中国香港 (Hong Kong) 09 - port
+  - 🇭🇰 中国香港 (Hong Kong) 10 - port
 rules:
 - MATCH,PROXIES

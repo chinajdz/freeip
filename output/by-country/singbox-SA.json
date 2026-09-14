@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - port"
+        "🇸🇦 SA 01 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - port"
+        "🇸🇦 SA 01 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
