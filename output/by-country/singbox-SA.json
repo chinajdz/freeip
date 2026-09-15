@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 CL 01 - port"
+        "🇸🇦 SA 01 - port",
+        "🇸🇦 SA 02 - port",
+        "🇸🇦 SA 03 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 CL 01 - port"
+        "🇸🇦 SA 01 - port",
+        "🇸🇦 SA 02 - port",
+        "🇸🇦 SA 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
