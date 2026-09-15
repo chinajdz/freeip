@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇺🇿 UZ 01 - port",
+        "🇺🇿 UZ 02 - port",
+        "🇺🇿 UZ 03 - port",
+        "🇺🇿 UZ 04 - port",
+        "🇺🇿 UZ 05 - port"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇺🇿 UZ 01 - port",
+        "🇺🇿 UZ 02 - port",
+        "🇺🇿 UZ 03 - port",
+        "🇺🇿 UZ 04 - port",
+        "🇺🇿 UZ 05 - port"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
