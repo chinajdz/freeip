@@ -5,32 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
-  type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  type: ss
+  server: 195.133.23.200
+  port: 7018
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 02 - port
-  type: vless
-  server: 185.148.106.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: ss
+  server: 195.58.48.137
+  port: 7018
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime54.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 03 - port
   type: vless
   server: 78.159.247.246
@@ -46,41 +33,90 @@ proxies:
     headers:
       Host: sb2.hat.onl
 - name: 🇷🇺 俄罗斯 (Russia) 04 - port
-  type: vless
-  server: 172.64.153.235
-  port: 8443
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  type: ss
+  server: 194.87.196.13
+  port: 7018
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: socks5.revil-time3.workers.dev
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 05 - port
   type: vless
-  server: 172.67.155.231
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 95.163.232.171
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: pr-media.pepro.site
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: index.arcane509.workers.dev
+      Host: pr-media.pepro.site
 - name: 🇷🇺 俄罗斯 (Russia) 06 - port
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pr-media.pepro.site
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: pr-media.pepro.site
+- name: 🇷🇺 俄罗斯 (Russia) 07 - port
+  type: ss
+  server: 195.133.5.102
+  port: 7018
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - port
+  type: ss
+  server: 46.17.40.234
+  port: 7018
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - port
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - port
+- name: 🇷🇺 俄罗斯 (Russia) 10 - port
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 11 - port
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 12 - port
   type: ss
   server: 46.17.42.166
   port: 50111
@@ -99,6 +135,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - port
   - 🇷🇺 俄罗斯 (Russia) 06 - port
   - 🇷🇺 俄罗斯 (Russia) 07 - port
+  - 🇷🇺 俄罗斯 (Russia) 08 - port
+  - 🇷🇺 俄罗斯 (Russia) 09 - port
+  - 🇷🇺 俄罗斯 (Russia) 10 - port
+  - 🇷🇺 俄罗斯 (Russia) 11 - port
+  - 🇷🇺 俄罗斯 (Russia) 12 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,5 +152,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - port
   - 🇷🇺 俄罗斯 (Russia) 06 - port
   - 🇷🇺 俄罗斯 (Russia) 07 - port
+  - 🇷🇺 俄罗斯 (Russia) 08 - port
+  - 🇷🇺 俄罗斯 (Russia) 09 - port
+  - 🇷🇺 俄罗斯 (Russia) 10 - port
+  - 🇷🇺 俄罗斯 (Russia) 11 - port
+  - 🇷🇺 俄罗斯 (Russia) 12 - port
 rules:
 - MATCH,PROXIES
