@@ -6,46 +6,14 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - port
   type: vless
-  server: 108.165.233.223
-  port: 443
-  uuid: 2388e166-3890-33ae-f77e-efac00000001
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 02 - port
-  type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 03 - port
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 04 - port
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 05 - port
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -61,9 +29,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - port
   - 🇧🇬 BG 02 - port
-  - 🇧🇬 BG 03 - port
-  - 🇧🇬 BG 04 - port
-  - 🇧🇬 BG 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,8 +36,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - port
   - 🇧🇬 BG 02 - port
-  - 🇧🇬 BG 03 - port
-  - 🇧🇬 BG 04 - port
-  - 🇧🇬 BG 05 - port
 rules:
 - MATCH,PROXIES

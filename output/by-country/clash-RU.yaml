@@ -5,143 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
-  type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 02 - port
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 03 - port
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - port
-  type: vless
-  server: 176.124.223.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime38.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 05 - port
-  type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: blue-rice-7142.30-346.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 06 - port
   type: ss
   server: 195.133.23.200
   port: 7018
   cipher: aes-256-gcm
   password: 81a20429165df87e
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - port
-  type: vless
-  server: 172.67.159.65
-  port: 443
-  uuid: d8c14c5c-a80a-4f6f-a5fb-52071849c443
+- name: 🇷🇺 俄罗斯 (Russia) 02 - port
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
   udp: true
-  tls: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+  type: vless
+  server: 172.64.53.55
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: CgxGqchEiAMnA-jkS01FiDlsnqOjwF-S.ALIAmA.WOrKErS.DeV
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    path: /?ed=2560security=tls+
     headers:
-      Host: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 08 - port
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - port
   type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  server: 104.18.34.14
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /?ed=2560security=tls
     headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 09 - port
-  type: vless
-  server: 104.19.164.155
-  port: 2083
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 10 - port
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 11 - port
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,13 +53,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
   - 🇷🇺 俄罗斯 (Russia) 04 - port
-  - 🇷🇺 俄罗斯 (Russia) 05 - port
-  - 🇷🇺 俄罗斯 (Russia) 06 - port
-  - 🇷🇺 俄罗斯 (Russia) 07 - port
-  - 🇷🇺 俄罗斯 (Russia) 08 - port
-  - 🇷🇺 俄罗斯 (Russia) 09 - port
-  - 🇷🇺 俄罗斯 (Russia) 10 - port
-  - 🇷🇺 俄罗斯 (Russia) 11 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -167,12 +62,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
   - 🇷🇺 俄罗斯 (Russia) 04 - port
-  - 🇷🇺 俄罗斯 (Russia) 05 - port
-  - 🇷🇺 俄罗斯 (Russia) 06 - port
-  - 🇷🇺 俄罗斯 (Russia) 07 - port
-  - 🇷🇺 俄罗斯 (Russia) 08 - port
-  - 🇷🇺 俄罗斯 (Russia) 09 - port
-  - 🇷🇺 俄罗斯 (Russia) 10 - port
-  - 🇷🇺 俄罗斯 (Russia) 11 - port
 rules:
 - MATCH,PROXIES

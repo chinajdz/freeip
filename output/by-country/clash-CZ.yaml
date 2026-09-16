@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - port
   type: vless
-  server: 162.159.152.4
+  server: 172.66.44.124
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /pRXE5ot0RZaQSr7B
     headers:
-      Host: rayan-007.maxima.dpdns.org
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
