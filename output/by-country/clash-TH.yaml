@@ -20,45 +20,20 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 02 - port
   type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d46bf492
+    headers:
+      Host: ''
 - name: 🇹🇭 TH 03 - port
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d46bf492
-    headers:
-      Host: ''
-- name: 🇹🇭 TH 04 - port
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d46bf492
-    headers:
-      Host: ''
-- name: 🇹🇭 TH 05 - port
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -81,8 +56,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - port
   - 🇹🇭 TH 02 - port
   - 🇹🇭 TH 03 - port
-  - 🇹🇭 TH 04 - port
-  - 🇹🇭 TH 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,7 +64,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - port
   - 🇹🇭 TH 02 - port
   - 🇹🇭 TH 03 - port
-  - 🇹🇭 TH 04 - port
-  - 🇹🇭 TH 05 - port
 rules:
 - MATCH,PROXIES

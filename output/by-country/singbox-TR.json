@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - port",
-        "🇸🇦 SA 02 - port",
-        "🇸🇦 SA 03 - port"
+        "🇹🇷 土耳其 (Turkey) 01 - port",
+        "🇹🇷 土耳其 (Turkey) 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - port",
-        "🇸🇦 SA 02 - port",
-        "🇸🇦 SA 03 - port"
+        "🇹🇷 土耳其 (Turkey) 01 - port",
+        "🇹🇷 土耳其 (Turkey) 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

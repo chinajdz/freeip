@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - port
+- name: 🇱🇻 LV 01 - port
   type: vless
-  server: 104.24.3.153
-  port: 443
-  uuid: 887f0c24-8b2e-40ce-8df5-27b4cb06ce81
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  uuid: tmp_user
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: usER-svc-Ca3845-EdG.PlAtfOrm-37528A.woRkErs.Dev
   network: ws
   ws-opts:
-    path: /?proxyip=185.239.48.237&ed=2560
+    path: /api
     headers:
-      Host: usER-Svc-ca3845-Edg.PlAtforM-37528a.WoRkERS.deV
+      Host: queuev4.vk.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - port
+  - 🇱🇻 LV 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - port
+  - 🇱🇻 LV 01 - port
 rules:
 - MATCH,PROXIES
