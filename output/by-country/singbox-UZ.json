@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - port",
-        "🇺🇿 UZ 02 - port"
+        "🇺🇿 UZ 01 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - port",
-        "🇺🇿 UZ 02 - port"
+        "🇺🇿 UZ 01 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

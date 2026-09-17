@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - port
+- name: 🇳🇴 NO 01 - port
   type: vless
-  server: 185.217.108.229
-  port: 23351
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 46.29.238.32
+  port: 40443
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /help?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+  servername: deepl.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - port
+  - 🇳🇴 NO 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - port
+  - 🇳🇴 NO 01 - port
 rules:
 - MATCH,PROXIES
