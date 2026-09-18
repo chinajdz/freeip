@@ -6,17 +6,16 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - port
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 02 - port
   type: vless
   server: uae.unixzone.us
@@ -45,7 +44,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - port
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -58,18 +57,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - port
   type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: apicdn.4subnodes.com
   network: ws
   ws-opts:
-    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
+    path: /
     headers:
-      Host: apicdn.4subnodes.com
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - port
   type: vless
   server: 84.235.244.108
@@ -83,18 +81,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - port
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: ce57910d-b7a9-4eaa-9a94-a1dda0d08026
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,7 +92,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - port
   - 🇦🇪 阿联酋 (UAE) 05 - port
   - 🇦🇪 阿联酋 (UAE) 06 - port
-  - 🇦🇪 阿联酋 (UAE) 07 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,6 +103,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - port
   - 🇦🇪 阿联酋 (UAE) 05 - port
   - 🇦🇪 阿联酋 (UAE) 06 - port
-  - 🇦🇪 阿联酋 (UAE) 07 - port
 rules:
 - MATCH,PROXIES
