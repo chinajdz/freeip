@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇿 BZ 01 - port
+- name: 🇶🇦 QA 01 - port
   type: vless
-  server: 202.181.177.8
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 34.18.31.5
+  port: 443
+  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇿 BZ 01 - port
+  - 🇶🇦 QA 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇿 BZ 01 - port
+  - 🇶🇦 QA 01 - port
 rules:
 - MATCH,PROXIES

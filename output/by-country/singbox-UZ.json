@@ -7,7 +7,8 @@
       "outbounds": [
         "auto",
         "🇺🇿 UZ 01 - port",
-        "🇺🇿 UZ 02 - port"
+        "🇺🇿 UZ 02 - port",
+        "🇺🇿 UZ 03 - port"
       ]
     },
     {
@@ -15,7 +16,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇿 UZ 01 - port",
-        "🇺🇿 UZ 02 - port"
+        "🇺🇿 UZ 02 - port",
+        "🇺🇿 UZ 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
