@@ -7,12 +7,15 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - port",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port",
-        "🇺🇸 美国 (United States) 03 (家宽) - port",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - port",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - port",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - port",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - port",
         "🇰🇷 韩国 (South Korea) 06 (家宽) - port",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - port"
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - port",
+        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - port",
+        "🇰🇷 韩国 (South Korea) 09 (家宽) - port",
+        "🇰🇷 韩国 (South Korea) 10 (家宽) - port"
       ]
     },
     {
@@ -20,12 +23,15 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - port",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port",
-        "🇺🇸 美国 (United States) 03 (家宽) - port",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - port",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - port",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - port",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - port",
         "🇰🇷 韩国 (South Korea) 06 (家宽) - port",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - port"
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - port",
+        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - port",
+        "🇰🇷 韩国 (South Korea) 09 (家宽) - port",
+        "🇰🇷 韩国 (South Korea) 10 (家宽) - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
