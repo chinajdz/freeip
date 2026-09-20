@@ -6,14 +6,38 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - port"
+        "🇰🇿 KZ 01 - port",
+        "🇰🇿 KZ 02 - port",
+        "🇰🇿 KZ 03 - port",
+        "🇰🇿 KZ 04 - port",
+        "🇰🇿 KZ 05 - port",
+        "🇰🇿 KZ 06 - port",
+        "🇰🇿 KZ 07 - port",
+        "🇰🇿 KZ 08 - port",
+        "🇰🇿 KZ 09 - port",
+        "🇰🇿 KZ 10 - port",
+        "🇰🇿 KZ 11 - port",
+        "🇰🇿 KZ 12 - port",
+        "🇰🇿 KZ 13 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - port"
+        "🇰🇿 KZ 01 - port",
+        "🇰🇿 KZ 02 - port",
+        "🇰🇿 KZ 03 - port",
+        "🇰🇿 KZ 04 - port",
+        "🇰🇿 KZ 05 - port",
+        "🇰🇿 KZ 06 - port",
+        "🇰🇿 KZ 07 - port",
+        "🇰🇿 KZ 08 - port",
+        "🇰🇿 KZ 09 - port",
+        "🇰🇿 KZ 10 - port",
+        "🇰🇿 KZ 11 - port",
+        "🇰🇿 KZ 12 - port",
+        "🇰🇿 KZ 13 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

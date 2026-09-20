@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - port
   type: vless
-  server: 195.85.23.47
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - port
   type: vless
-  server: 195.85.23.45
+  server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -29,12 +29,40 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - port
   type: vless
   server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 04 - port
+  type: vless
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 05 - port
+  type: vless
+  server: 195.85.23.45
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -54,6 +82,8 @@ proxy-groups:
   - 🇨🇿 CZ 01 - port
   - 🇨🇿 CZ 02 - port
   - 🇨🇿 CZ 03 - port
+  - 🇨🇿 CZ 04 - port
+  - 🇨🇿 CZ 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +92,7 @@ proxy-groups:
   - 🇨🇿 CZ 01 - port
   - 🇨🇿 CZ 02 - port
   - 🇨🇿 CZ 03 - port
+  - 🇨🇿 CZ 04 - port
+  - 🇨🇿 CZ 05 - port
 rules:
 - MATCH,PROXIES
