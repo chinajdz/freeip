@@ -1,0 +1,29 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇷 IR 01 - port
+  type: vless
+  server: simia.northforex.ir
+  port: 8443
+  uuid: 22ac8d19-9eec-493d-a492-e024cdba594b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: simia.northforex.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇷 IR 01 - port
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇷 IR 01 - port
+rules:
+- MATCH,PROXIES
