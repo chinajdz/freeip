@@ -6,26 +6,12 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - port
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: 4.221.224.246
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: 3aN9XUwhvq1ujlsO
   udp: true
 - name: 🇿🇦 ZA 02 - port
-  type: ss
-  server: 4.221.224.246
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 3aN9XUwhvq1ujlsO
-  udp: true
-- name: 🇿🇦 ZA 03 - port
-  type: ss
-  server: 4.221.224.246
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 3aN9XUwhvq1ujlsO
-  udp: true
-- name: 🇿🇦 ZA 04 - port
   type: ss
   server: 4.221.224.246
   port: 443
@@ -39,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇿🇦 ZA 01 - port
   - 🇿🇦 ZA 02 - port
-  - 🇿🇦 ZA 03 - port
-  - 🇿🇦 ZA 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇿🇦 ZA 01 - port
   - 🇿🇦 ZA 02 - port
-  - 🇿🇦 ZA 03 - port
-  - 🇿🇦 ZA 04 - port
 rules:
 - MATCH,PROXIES
