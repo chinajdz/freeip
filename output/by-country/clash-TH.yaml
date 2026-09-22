@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 02 - port
   type: vless
   server: 34.15.162.1
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇹🇭 TH 03 - port
   type: vless
   server: 34.15.162.1
@@ -51,7 +51,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 05 - port
   type: vless
   server: 43.133.110.81
@@ -66,6 +66,30 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇹🇭 TH 06 - port
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇹🇭 TH 07 - port
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +100,8 @@ proxy-groups:
   - 🇹🇭 TH 03 - port
   - 🇹🇭 TH 04 - port
   - 🇹🇭 TH 05 - port
+  - 🇹🇭 TH 06 - port
+  - 🇹🇭 TH 07 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,5 +112,7 @@ proxy-groups:
   - 🇹🇭 TH 03 - port
   - 🇹🇭 TH 04 - port
   - 🇹🇭 TH 05 - port
+  - 🇹🇭 TH 06 - port
+  - 🇹🇭 TH 07 - port
 rules:
 - MATCH,PROXIES
