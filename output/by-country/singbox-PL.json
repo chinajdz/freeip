@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL 01 - port",
-        "🇵🇱 PL 02 - port"
+        "🇵🇱 PL 02 - port",
+        "🇵🇱 PL 03 - port",
+        "🇵🇱 PL 04 - port"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 PL 01 - port",
-        "🇵🇱 PL 02 - port"
+        "🇵🇱 PL 02 - port",
+        "🇵🇱 PL 03 - port",
+        "🇵🇱 PL 04 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
