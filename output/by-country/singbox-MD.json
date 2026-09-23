@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - port",
-        "🇲🇩 MD 02 - port",
-        "🇲🇩 MD 03 - port",
-        "🇲🇩 MD 04 - port"
+        "🇲🇩 MD 01 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - port",
-        "🇲🇩 MD 02 - port",
-        "🇲🇩 MD 03 - port",
-        "🇲🇩 MD 04 - port"
+        "🇲🇩 MD 01 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
