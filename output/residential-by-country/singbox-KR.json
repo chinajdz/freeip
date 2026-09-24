@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - port",
-        "🇺🇿 UZ 02 - port",
-        "🇺🇿 UZ 03 - port",
-        "🇺🇿 UZ 04 - port"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - port",
-        "🇺🇿 UZ 02 - port",
-        "🇺🇿 UZ 03 - port",
-        "🇺🇿 UZ 04 - port"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
