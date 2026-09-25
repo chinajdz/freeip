@@ -5,6 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - port
+  type: vless
+  server: 34.92.145.185
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
+  type: vless
+  server: 34.92.145.185
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - port
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - port
+  type: vless
+  server: 34.92.145.185
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - port
   type: vmess
   server: 47.83.207.148
   port: 443
@@ -20,31 +76,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: VAH4URdZL3jDX5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
-  type: vless
-  server: 34.92.145.185
-  port: 443
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
-  type: vless
-  server: 34.92.145.185
-  port: 443
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - port
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - port
   type: vmess
   server: 89.223.95.77
   port: 22324
@@ -63,6 +95,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - port
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
   - 🇭🇰 中国香港 (Hong Kong) 04 - port
+  - 🇭🇰 中国香港 (Hong Kong) 05 - port
+  - 🇭🇰 中国香港 (Hong Kong) 06 - port
+  - 🇭🇰 中国香港 (Hong Kong) 07 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +107,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - port
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
   - 🇭🇰 中国香港 (Hong Kong) 04 - port
+  - 🇭🇰 中国香港 (Hong Kong) 05 - port
+  - 🇭🇰 中国香港 (Hong Kong) 06 - port
+  - 🇭🇰 中国香港 (Hong Kong) 07 - port
 rules:
 - MATCH,PROXIES
