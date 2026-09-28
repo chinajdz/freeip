@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS 01 - port"
+        "🇨🇾 CY 01 - port",
+        "🇨🇾 CY 02 - port",
+        "🇨🇾 CY 03 - port",
+        "🇨🇾 CY 04 - port",
+        "🇨🇾 CY 05 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS 01 - port"
+        "🇨🇾 CY 01 - port",
+        "🇨🇾 CY 02 - port",
+        "🇨🇾 CY 03 - port",
+        "🇨🇾 CY 04 - port",
+        "🇨🇾 CY 05 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
