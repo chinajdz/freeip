@@ -25,32 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇿🇦 ZA 04 - port
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇿🇦 ZA 05 - port
-  type: vless
-  server: platform107.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.golnamakcert.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - port
   - 🇿🇦 ZA 02 - port
   - 🇿🇦 ZA 03 - port
-  - 🇿🇦 ZA 04 - port
-  - 🇿🇦 ZA 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - port
   - 🇿🇦 ZA 02 - port
   - 🇿🇦 ZA 03 - port
-  - 🇿🇦 ZA 04 - port
-  - 🇿🇦 ZA 05 - port
 rules:
 - MATCH,PROXIES
