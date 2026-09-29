@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - port"
+        "🇧🇷 BR 01 - port",
+        "🇧🇷 BR 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - port"
+        "🇧🇷 BR 01 - port",
+        "🇧🇷 BR 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
