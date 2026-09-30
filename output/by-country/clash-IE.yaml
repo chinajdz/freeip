@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - port
   type: vless
-  server: 104.21.55.18
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 02 - port
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /?Telegram---mtmvpn---mtmvpn---mtmvpn---mtmvpn
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 03 - port
-  type: vless
   server: 45.141.234.138
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -52,15 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - port
-  - 🇮🇪 IE 02 - port
-  - 🇮🇪 IE 03 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - port
-  - 🇮🇪 IE 02 - port
-  - 🇮🇪 IE 03 - port
 rules:
 - MATCH,PROXIES
