@@ -4,29 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇶🇦 QA 01 - port
+- name: 🇫🇮 FI 01 - port
   type: vless
-  server: 34.18.222.19
-  port: 443
-  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇶🇦 QA 01 - port
+  - 🇫🇮 FI 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇶🇦 QA 01 - port
+  - 🇫🇮 FI 01 - port
 rules:
 - MATCH,PROXIES
