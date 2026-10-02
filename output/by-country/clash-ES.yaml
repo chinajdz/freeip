@@ -7,6 +7,30 @@ proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - port
   type: vmess
   server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 02 - port
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 03 - port
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 04 - port
+  type: vmess
+  server: mygptagent.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -14,44 +38,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mygptagent.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 02 - port
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 03 - port
-  type: vless
-  server: 34.175.107.233
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04 - port
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: ''
 - name: 🇪🇸 西班牙 (Spain) 05 - port
   type: ss
   server: 108.181.121.226
@@ -60,12 +52,15 @@ proxies:
   password: WSyL4XTwNsdv
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 06 - port
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 07 - port
   type: vmess
   server: 66.163.118.73
@@ -76,23 +71,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 08 - port
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 09 - port
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,8 +83,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - port
   - 🇪🇸 西班牙 (Spain) 06 - port
   - 🇪🇸 西班牙 (Spain) 07 - port
-  - 🇪🇸 西班牙 (Spain) 08 - port
-  - 🇪🇸 西班牙 (Spain) 09 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,7 +95,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - port
   - 🇪🇸 西班牙 (Spain) 06 - port
   - 🇪🇸 西班牙 (Spain) 07 - port
-  - 🇪🇸 西班牙 (Spain) 08 - port
-  - 🇪🇸 西班牙 (Spain) 09 - port
 rules:
 - MATCH,PROXIES

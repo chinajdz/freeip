@@ -8,7 +8,11 @@
         "auto",
         "🇪🇪 EE 01 - port",
         "🇪🇪 EE 02 - port",
-        "🇪🇪 EE 03 - port"
+        "🇪🇪 EE 03 - port",
+        "🇪🇪 EE 04 - port",
+        "🇪🇪 EE 05 - port",
+        "🇪🇪 EE 06 - port",
+        "🇪🇪 EE 07 - port"
       ]
     },
     {
@@ -17,7 +21,11 @@
       "outbounds": [
         "🇪🇪 EE 01 - port",
         "🇪🇪 EE 02 - port",
-        "🇪🇪 EE 03 - port"
+        "🇪🇪 EE 03 - port",
+        "🇪🇪 EE 04 - port",
+        "🇪🇪 EE 05 - port",
+        "🇪🇪 EE 06 - port",
+        "🇪🇪 EE 07 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
