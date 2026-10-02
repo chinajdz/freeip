@@ -6,35 +6,32 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - port
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
-  type: vmess
-  server: 194.99.79.26
+  server: 47.243.153.153
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: I2PSm3Knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: ''
+      Host: I2PSm3Knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
+  type: vless
+  server: hk.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: hk.monkora.org
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - port
   type: vmess
   server: 194.99.79.26
@@ -52,29 +49,13 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - port
-  type: vless
-  server: 108.165.100.62
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
+  type: ss
+  server: telegram.khp25.com
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - port
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - port
   type: vmess
   server: 194.99.79.26
   port: 443
@@ -90,13 +71,44 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - port
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - port
   type: ss
-  server: telegram.khp25.com
+  server: telegramx.khp25.com
   port: 1080
   cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
+  password: m5nsedvdczx6x06e
   udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - port
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +121,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - port
   - 🇭🇰 中国香港 (Hong Kong) 06 - port
   - 🇭🇰 中国香港 (Hong Kong) 07 - port
+  - 🇭🇰 中国香港 (Hong Kong) 08 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,5 +134,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - port
   - 🇭🇰 中国香港 (Hong Kong) 06 - port
   - 🇭🇰 中国香港 (Hong Kong) 07 - port
+  - 🇭🇰 中国香港 (Hong Kong) 08 - port
 rules:
 - MATCH,PROXIES

@@ -5,13 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
+  type: vless
+  server: 162.159.45.19
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - port
+  type: vless
+  server: 162.159.43.187
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
   type: vless
   server: 78.159.246.110
   port: 443
@@ -25,7 +44,7 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+- name: 🇷🇺 俄罗斯 (Russia) 04 - port
   type: vless
   server: 217.19.122.200
   port: 443
@@ -39,7 +58,73 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - port
+- name: 🇷🇺 俄罗斯 (Russia) 05 - port
+  type: vless
+  server: 162.159.45.19
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - port
+  type: vless
+  server: 172.64.229.2
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 07 - port
+  type: vless
+  server: 104.18.46.46
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 08 - port
+  type: vless
+  server: 104.18.46.234
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 09 - port
+  type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 10 - port
   type: vless
   server: 46.243.232.125
   port: 443
@@ -62,6 +147,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
   - 🇷🇺 俄罗斯 (Russia) 04 - port
+  - 🇷🇺 俄罗斯 (Russia) 05 - port
+  - 🇷🇺 俄罗斯 (Russia) 06 - port
+  - 🇷🇺 俄罗斯 (Russia) 07 - port
+  - 🇷🇺 俄罗斯 (Russia) 08 - port
+  - 🇷🇺 俄罗斯 (Russia) 09 - port
+  - 🇷🇺 俄罗斯 (Russia) 10 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +162,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - port
   - 🇷🇺 俄罗斯 (Russia) 03 - port
   - 🇷🇺 俄罗斯 (Russia) 04 - port
+  - 🇷🇺 俄罗斯 (Russia) 05 - port
+  - 🇷🇺 俄罗斯 (Russia) 06 - port
+  - 🇷🇺 俄罗斯 (Russia) 07 - port
+  - 🇷🇺 俄罗斯 (Russia) 08 - port
+  - 🇷🇺 俄罗斯 (Russia) 09 - port
+  - 🇷🇺 俄罗斯 (Russia) 10 - port
 rules:
 - MATCH,PROXIES
