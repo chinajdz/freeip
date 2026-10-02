@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇰🇬 KG 01 - port",
-        "🇰🇬 KG 02 - port"
+        "🇰🇬 KG 02 - port",
+        "🇰🇬 KG 03 - port",
+        "🇰🇬 KG 04 - port"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇬 KG 01 - port",
-        "🇰🇬 KG 02 - port"
+        "🇰🇬 KG 02 - port",
+        "🇰🇬 KG 03 - port",
+        "🇰🇬 KG 04 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
