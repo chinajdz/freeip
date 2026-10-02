@@ -6,14 +6,38 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - port"
+        "🇲🇾 MY 01 - port",
+        "🇲🇾 MY 02 - port",
+        "🇲🇾 MY 03 - port",
+        "🇲🇾 MY 04 - port",
+        "🇲🇾 MY 05 - port",
+        "🇲🇾 MY 06 - port",
+        "🇲🇾 MY 07 - port",
+        "🇲🇾 MY 08 - port",
+        "🇲🇾 MY 09 - port",
+        "🇲🇾 MY 10 - port",
+        "🇲🇾 MY 11 - port",
+        "🇲🇾 MY 12 - port",
+        "🇲🇾 MY 13 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - port"
+        "🇲🇾 MY 01 - port",
+        "🇲🇾 MY 02 - port",
+        "🇲🇾 MY 03 - port",
+        "🇲🇾 MY 04 - port",
+        "🇲🇾 MY 05 - port",
+        "🇲🇾 MY 06 - port",
+        "🇲🇾 MY 07 - port",
+        "🇲🇾 MY 08 - port",
+        "🇲🇾 MY 09 - port",
+        "🇲🇾 MY 10 - port",
+        "🇲🇾 MY 11 - port",
+        "🇲🇾 MY 12 - port",
+        "🇲🇾 MY 13 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

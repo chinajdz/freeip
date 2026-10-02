@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 - port
+- name: 🇮🇶 IQ 01 - port
   type: vless
-  server: 89.218.15.90
-  port: 10002
-  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
+  server: 188.114.97.6
+  port: 443
+  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kz1.vpnjantit.com
+  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
   network: ws
   ws-opts:
-    path: /vpnjantit
+    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
     headers:
-      Host: kz1.vpnjantit.com
+      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 - port
+  - 🇮🇶 IQ 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 - port
+  - 🇮🇶 IQ 01 - port
 rules:
 - MATCH,PROXIES
