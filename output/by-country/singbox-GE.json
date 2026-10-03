@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - port",
-        "🇹🇭 TH 02 - port"
+        "🇬🇪 GE 01 - port",
+        "🇬🇪 GE 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - port",
-        "🇹🇭 TH 02 - port"
+        "🇬🇪 GE 01 - port",
+        "🇬🇪 GE 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
