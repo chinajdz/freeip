@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - port
   type: vless
-  server: 141.0.187.16
-  port: 2083
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.16
-- name: 🇪🇪 EE 02 - port
-  type: vless
   server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -27,6 +13,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 02 - port
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 03 - port
   type: vless
   server: 77.72.85.246
@@ -44,12 +43,16 @@ proxies:
 - name: 🇪🇪 EE 04 - port
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 05 - port
   type: vless
   server: 94.183.170.135
@@ -65,29 +68,27 @@ proxies:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 06 - port
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 07 - port
-  type: vless
-  server: 89.144.32.247
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 141.0.187.16
+  port: 2083
+  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: crt.dodopanel.biz
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 141.0.187.16
+- name: 🇪🇪 EE 07 - port
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 08 - port
   type: vless
   server: 77.72.85.246
@@ -103,15 +104,6 @@ proxies:
     headers:
       Host: fdghyt.com
 - name: 🇪🇪 EE 09 - port
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 10 - port
   type: vless
   server: 77.72.85.247
   port: 8443
@@ -139,7 +131,6 @@ proxy-groups:
   - 🇪🇪 EE 07 - port
   - 🇪🇪 EE 08 - port
   - 🇪🇪 EE 09 - port
-  - 🇪🇪 EE 10 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,6 +145,5 @@ proxy-groups:
   - 🇪🇪 EE 07 - port
   - 🇪🇪 EE 08 - port
   - 🇪🇪 EE 09 - port
-  - 🇪🇪 EE 10 - port
 rules:
 - MATCH,PROXIES
