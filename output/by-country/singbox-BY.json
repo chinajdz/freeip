@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 - port",
-        "🇲🇽 MX 02 - port"
+        "🇧🇾 BY 01 - port",
+        "🇧🇾 BY 02 - port",
+        "🇧🇾 BY 03 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 - port",
-        "🇲🇽 MX 02 - port"
+        "🇧🇾 BY 01 - port",
+        "🇧🇾 BY 02 - port",
+        "🇧🇾 BY 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
