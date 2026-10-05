@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - port
   type: vless
-  server: 172.66.152.4
+  server: argo6.5671234.xyz
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -18,21 +18,7 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - port
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - port
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -46,21 +32,50 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port
+  type: vless
+  server: 59.125.69.23
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 59.125.69.23
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - port
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: patient-cake-39c7.44-e7a.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - port
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - port
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - port
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - port
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - port
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - port
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - port
 rules:
 - MATCH,PROXIES

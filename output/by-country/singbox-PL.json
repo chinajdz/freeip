@@ -8,7 +8,9 @@
         "auto",
         "🇵🇱 PL 01 - port",
         "🇵🇱 PL 02 - port",
-        "🇵🇱 PL 03 - port"
+        "🇵🇱 PL 03 - port",
+        "🇵🇱 PL 04 - port",
+        "🇵🇱 PL 05 - port"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "outbounds": [
         "🇵🇱 PL 01 - port",
         "🇵🇱 PL 02 - port",
-        "🇵🇱 PL 03 - port"
+        "🇵🇱 PL 03 - port",
+        "🇵🇱 PL 04 - port",
+        "🇵🇱 PL 05 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
