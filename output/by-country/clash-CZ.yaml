@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - port
   type: vless
-  server: 188.114.98.134
+  server: 85.90.196.11
   port: 443
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: /glasspanel/guest000_0_5de14443985f/
     headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
 - name: 🇨🇿 CZ 02 - port
   type: vless
-  server: 104.21.82.226
+  server: 95.182.95.178
   port: 443
-  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /fp
     headers:
-      Host: 002.inc-electrocell-001-002.workers.dev
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
