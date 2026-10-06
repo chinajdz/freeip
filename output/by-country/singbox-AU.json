@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 GE 01 - port",
-        "🇬🇪 GE 02 - port"
+        "🇦🇺 澳大利亚 (Australia) 01 - port",
+        "🇦🇺 澳大利亚 (Australia) 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 GE 01 - port",
-        "🇬🇪 GE 02 - port"
+        "🇦🇺 澳大利亚 (Australia) 01 - port",
+        "🇦🇺 澳大利亚 (Australia) 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

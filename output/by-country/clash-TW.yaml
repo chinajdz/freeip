@@ -6,32 +6,28 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - port
   type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - port
   type: vless
-  server: argo6.5671234.xyz
+  server: 130.211.240.128
   port: 443
-  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: argo6.5671234.xyz
-  network: ws
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - port
   type: vless
   server: argo6.5671234.xyz
@@ -48,18 +44,16 @@ proxies:
       Host: argo6.5671234.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - port
   type: vless
-  server: argo6.5671234.xyz
+  server: 130.211.240.128
   port: 443
-  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: argo6.5671234.xyz
-  network: ws
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - port
   type: vless
   server: 130.211.240.128
@@ -71,24 +65,10 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: random
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - port
   type: vless
-  server: 59.125.69.24
-  port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 59.125.69.24
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - port
-  type: vless
-  server: 104.20.36.205
+  server: 45.192.201.140
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -100,9 +80,23 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - port
+  type: vless
+  server: 60.248.219.78
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 08 - port
   type: vless
-  server: 172.66.152.4
+  server: 104.20.36.205
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -130,7 +124,7 @@ proxies:
       Host: argo6.5671234.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 10 - port
   type: vless
-  server: 104.20.36.205
+  server: 172.66.152.4
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -144,7 +138,7 @@ proxies:
       Host: argo6.5671234.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 11 - port
   type: vless
-  server: 45.192.201.140
+  server: argo6.5671234.xyz
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -158,7 +152,7 @@ proxies:
       Host: argo6.5671234.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 12 - port
   type: vless
-  server: 45.192.201.140
+  server: argo6.5671234.xyz
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -238,6 +232,36 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 19 - port
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 20 - port
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 21 - port
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -261,6 +285,9 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 16 - port
   - 🇹🇼 中国台湾 (Taiwan) 17 - port
   - 🇹🇼 中国台湾 (Taiwan) 18 - port
+  - 🇹🇼 中国台湾 (Taiwan) 19 - port
+  - 🇹🇼 中国台湾 (Taiwan) 20 - port
+  - 🇹🇼 中国台湾 (Taiwan) 21 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -284,5 +311,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 16 - port
   - 🇹🇼 中国台湾 (Taiwan) 17 - port
   - 🇹🇼 中国台湾 (Taiwan) 18 - port
+  - 🇹🇼 中国台湾 (Taiwan) 19 - port
+  - 🇹🇼 中国台湾 (Taiwan) 20 - port
+  - 🇹🇼 中国台湾 (Taiwan) 21 - port
 rules:
 - MATCH,PROXIES
