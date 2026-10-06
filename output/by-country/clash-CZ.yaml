@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - port
   type: vless
-  server: 85.90.196.11
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇨🇿 CZ 02 - port
-  type: vless
   server: 95.182.95.178
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - port
-  - 🇨🇿 CZ 02 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - port
-  - 🇨🇿 CZ 02 - port
 rules:
 - MATCH,PROXIES
