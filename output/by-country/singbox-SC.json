@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - port"
+        "🇸🇨 SC 01 - port",
+        "🇸🇨 SC 02 - port",
+        "🇸🇨 SC 03 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - port"
+        "🇸🇨 SC 01 - port",
+        "🇸🇨 SC 02 - port",
+        "🇸🇨 SC 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
