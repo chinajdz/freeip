@@ -7,7 +7,8 @@
       "outbounds": [
         "auto",
         "🇮🇪 IE 01 - port",
-        "🇮🇪 IE 02 - port"
+        "🇮🇪 IE 02 - port",
+        "🇮🇪 IE 03 - port"
       ]
     },
     {
@@ -15,7 +16,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇪 IE 01 - port",
-        "🇮🇪 IE 02 - port"
+        "🇮🇪 IE 02 - port",
+        "🇮🇪 IE 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
