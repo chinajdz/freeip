@@ -12,6 +12,13 @@ proxies:
   password: zlHMpI7N5dkZOHdH
   udp: true
 - name: 🇿🇦 ZA 02 - port
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 03 - port
   type: vless
   server: 34.35.186.228
   port: 443
@@ -23,27 +30,6 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 ZA 03 - port
-  type: ss
-  server: 20.87.212.24
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: zlHMpI7N5dkZOHdH
-  udp: true
-- name: 🇿🇦 ZA 04 - port
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦 ZA 05 - port
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,8 +38,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - port
   - 🇿🇦 ZA 02 - port
   - 🇿🇦 ZA 03 - port
-  - 🇿🇦 ZA 04 - port
-  - 🇿🇦 ZA 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,7 +46,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - port
   - 🇿🇦 ZA 02 - port
   - 🇿🇦 ZA 03 - port
-  - 🇿🇦 ZA 04 - port
-  - 🇿🇦 ZA 05 - port
 rules:
 - MATCH,PROXIES

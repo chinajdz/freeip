@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - port",
+        "🇲🇩 MD 02 - port",
+        "🇲🇩 MD 03 - port",
+        "🇲🇩 MD 04 - port",
+        "🇲🇩 MD 05 - port",
+        "🇲🇩 MD 06 - port",
+        "🇲🇩 MD 07 - port",
+        "🇲🇩 MD 08 - port",
+        "🇲🇩 MD 09 - port",
+        "🇲🇩 MD 10 - port",
+        "🇲🇩 MD 11 - port",
+        "🇲🇩 MD 12 - port",
+        "🇲🇩 MD 13 - port",
+        "🇲🇩 MD 14 - port",
+        "🇲🇩 MD 15 - port",
+        "🇲🇩 MD 16 - port",
+        "🇲🇩 MD 17 - port"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - port",
+        "🇲🇩 MD 02 - port",
+        "🇲🇩 MD 03 - port",
+        "🇲🇩 MD 04 - port",
+        "🇲🇩 MD 05 - port",
+        "🇲🇩 MD 06 - port",
+        "🇲🇩 MD 07 - port",
+        "🇲🇩 MD 08 - port",
+        "🇲🇩 MD 09 - port",
+        "🇲🇩 MD 10 - port",
+        "🇲🇩 MD 11 - port",
+        "🇲🇩 MD 12 - port",
+        "🇲🇩 MD 13 - port",
+        "🇲🇩 MD 14 - port",
+        "🇲🇩 MD 15 - port",
+        "🇲🇩 MD 16 - port",
+        "🇲🇩 MD 17 - port"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
