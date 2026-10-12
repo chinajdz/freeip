@@ -6,16 +6,21 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - port
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 02 - port
   type: vless
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -29,32 +34,22 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 03 - port
   type: vless
-  server: 77.72.85.247
+  server: 94.183.170.135
   port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - port
   type: vless
-  server: 77.72.85.247
+  server: 94.183.170.135
   port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 05 - port
   type: vless
   server: 77.72.85.247
@@ -71,25 +66,32 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 06 - port
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 07 - port
   type: vless
-  server: 185.209.15.100
-  port: 443
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM
-  servername: n1.vimeostream.online
-  client-fingerprint: firefox
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 08 - port
   type: vless
   server: 77.72.85.247
@@ -104,38 +106,6 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 09 - port
-  type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 10 - port
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 11 - port
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,9 +119,6 @@ proxy-groups:
   - 🇪🇪 EE 06 - port
   - 🇪🇪 EE 07 - port
   - 🇪🇪 EE 08 - port
-  - 🇪🇪 EE 09 - port
-  - 🇪🇪 EE 10 - port
-  - 🇪🇪 EE 11 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -165,8 +132,5 @@ proxy-groups:
   - 🇪🇪 EE 06 - port
   - 🇪🇪 EE 07 - port
   - 🇪🇪 EE 08 - port
-  - 🇪🇪 EE 09 - port
-  - 🇪🇪 EE 10 - port
-  - 🇪🇪 EE 11 - port
 rules:
 - MATCH,PROXIES

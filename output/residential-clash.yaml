@@ -14,13 +14,25 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 24864168545164.d6f54hd1j.cc
+  servername: ''
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 24864168545164.d6f54hd1j.cc
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port
+  type: vless
+  server: 118.167.248.243
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port
   type: vless
   server: 60.248.219.78
   port: 443
@@ -34,7 +46,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port
+- name: 🇺🇸 美国 (United States) 04 (家宽) - port
+  type: vless
+  server: 172.64.145.202
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newwk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - port
   type: vmess
   server: 654168416355441.d6f54hd1j.cc
   port: 443
@@ -50,27 +76,6 @@ proxies:
     path: /
     headers:
       Host: 654168416355441.d6f54hd1j.cc
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - port
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - port
-  type: vless
-  server: 103.148.73.173
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 103.148.73.173
 - name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - port
   type: vless
   server: 103.180.20.108
@@ -85,6 +90,20 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
+- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - port
+  type: vless
+  server: 103.148.73.173
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 103.148.73.173
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,9 +112,10 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - port
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - port
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - port
+  - 🇺🇸 美国 (United States) 04 (家宽) - port
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - port
   - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - port
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,8 +124,9 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - port
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - port
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - port
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - port
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - port
+  - 🇺🇸 美国 (United States) 04 (家宽) - port
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - port
   - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - port
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - port
 rules:
 - MATCH,PROXIES
