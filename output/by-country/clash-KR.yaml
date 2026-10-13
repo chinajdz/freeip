@@ -6,28 +6,28 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - port
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇰🇷 韩国 (South Korea) 02 - port
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 03 - port
   type: vless
   server: 34.22.111.30
@@ -53,27 +53,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ios
 - name: 🇰🇷 韩国 (South Korea) 05 - port
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 06 - port
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 07 - port
   type: vless
   server: 34.22.111.30
@@ -88,16 +80,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 08 - port
   type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 09 - port
   type: vless
   server: 34.22.111.30
@@ -109,7 +101,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: qq
 - name: 🇰🇷 韩国 (South Korea) 10 - port
   type: vless
   server: 34.22.111.30
@@ -121,30 +113,42 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: qq
 - name: 🇰🇷 韩国 (South Korea) 11 - port
-  type: vless
-  server: 34.22.111.30
+  type: vmess
+  server: 140.238.2.250
   port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12 - port
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 12 - port
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 13 - port
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 14 - port
   type: vless
   server: 34.22.111.30
   port: 443
@@ -155,17 +159,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 14 - port
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 15 - port
   type: vless
   server: 34.22.111.30
@@ -179,25 +173,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 16 - port
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 17 - port
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 18 - port
   type: vless
   server: 34.22.111.30
   port: 443
@@ -209,7 +184,53 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 17 - port
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 18 - port
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 19 - port
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 20 - port
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 21 - port
   type: vless
   server: 34.22.111.30
   port: 443
@@ -245,6 +266,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 17 - port
   - 🇰🇷 韩国 (South Korea) 18 - port
   - 🇰🇷 韩国 (South Korea) 19 - port
+  - 🇰🇷 韩国 (South Korea) 20 - port
+  - 🇰🇷 韩国 (South Korea) 21 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -269,5 +292,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 17 - port
   - 🇰🇷 韩国 (South Korea) 18 - port
   - 🇰🇷 韩国 (South Korea) 19 - port
+  - 🇰🇷 韩国 (South Korea) 20 - port
+  - 🇰🇷 韩国 (South Korea) 21 - port
 rules:
 - MATCH,PROXIES
