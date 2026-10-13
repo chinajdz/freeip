@@ -6,29 +6,38 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
   type: vless
-  server: 91.215.43.248
+  server: 188.114.97.7
   port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: my.kempekl.online
+  servername: o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev
   network: ws
   ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    path: /7J5lLqtBnJg9WjVT?ed
     headers:
-      Host: my.kempekl.online
+      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - port
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - port
+  - 🇷🇺 俄罗斯 (Russia) 02 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - port
+  - 🇷🇺 俄罗斯 (Russia) 02 - port
 rules:
 - MATCH,PROXIES
