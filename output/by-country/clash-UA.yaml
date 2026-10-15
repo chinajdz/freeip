@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - port
   type: vless
-  server: 45.158.185.172
-  port: 443
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z5n1.vpnpolar.online
-  network: ws
-  ws-opts:
-    path: /beeline
-    headers:
-      Host: z5n1.vpnpolar.online
-- name: 🇺🇦 UA 02 - port
-  type: vless
   server: 91.196.163.140
   port: 14430
   uuid: e86a3662-9b31-4d59-bc80-9e8644749b95
@@ -31,35 +17,17 @@ proxies:
     path: /vless
     headers:
       Host: 91.196.163.140
-- name: 🇺🇦 UA 03 - port
-  type: vless
-  server: z5n1.vpnpolar.online
-  port: 443
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z5n1.vpnpolar.online
-  network: ws
-  ws-opts:
-    path: /beeline
-    headers:
-      Host: z5n1.vpnpolar.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 UA 01 - port
-  - 🇺🇦 UA 02 - port
-  - 🇺🇦 UA 03 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 UA 01 - port
-  - 🇺🇦 UA 02 - port
-  - 🇺🇦 UA 03 - port
 rules:
 - MATCH,PROXIES
