@@ -1,0 +1,170 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇭 CH 01 - port
+  type: vless
+  server: 87.228.92.113
+  port: 25576
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 02 - port
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 03 - port
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇨🇭 CH 04 - port
+  type: vless
+  server: 162.159.228.255
+  port: 443
+  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇨🇭 CH 05 - port
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 06 - port
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 07 - port
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 08 - port
+  type: vless
+  server: 57.129.130.34
+  port: 52014
+  uuid: 33c621aa-f24c-406a-9e96-f60f528704a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇨🇭 CH 09 - port
+  type: vless
+  server: 87.228.92.113
+  port: 25576
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 10 - port
+  type: vless
+  server: 45.133.151.186
+  port: 25393
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 11 - port
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇭 CH 01 - port
+  - 🇨🇭 CH 02 - port
+  - 🇨🇭 CH 03 - port
+  - 🇨🇭 CH 04 - port
+  - 🇨🇭 CH 05 - port
+  - 🇨🇭 CH 06 - port
+  - 🇨🇭 CH 07 - port
+  - 🇨🇭 CH 08 - port
+  - 🇨🇭 CH 09 - port
+  - 🇨🇭 CH 10 - port
+  - 🇨🇭 CH 11 - port
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇭 CH 01 - port
+  - 🇨🇭 CH 02 - port
+  - 🇨🇭 CH 03 - port
+  - 🇨🇭 CH 04 - port
+  - 🇨🇭 CH 05 - port
+  - 🇨🇭 CH 06 - port
+  - 🇨🇭 CH 07 - port
+  - 🇨🇭 CH 08 - port
+  - 🇨🇭 CH 09 - port
+  - 🇨🇭 CH 10 - port
+  - 🇨🇭 CH 11 - port
+rules:
+- MATCH,PROXIES
