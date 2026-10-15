@@ -46,14 +46,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.137.43.168
-- name: 🇸🇨 SC 05 - port
-  type: vless
-  server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +55,6 @@ proxy-groups:
   - 🇸🇨 SC 02 - port
   - 🇸🇨 SC 03 - port
   - 🇸🇨 SC 04 - port
-  - 🇸🇨 SC 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,6 +64,5 @@ proxy-groups:
   - 🇸🇨 SC 02 - port
   - 🇸🇨 SC 03 - port
   - 🇸🇨 SC 04 - port
-  - 🇸🇨 SC 05 - port
 rules:
 - MATCH,PROXIES
