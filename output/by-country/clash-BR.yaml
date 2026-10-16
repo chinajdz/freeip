@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - port
   type: vless
-  server: platform101.golnamakcert.top
+  server: platform109.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,12 +14,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform109
     headers:
-      Host: platform101.halalkhor.info
+      Host: '%5B%27platform109.halalkhor.info%27%5D'
 - name: 🇧🇷 BR 02 - port
   type: vless
-  server: platform118.golnamakcert.top
+  server: 130.94.108.184
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -27,9 +27,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform118
+    path: /platform109
     headers:
-      Host: platform118.halalkhor.info
+      Host: '%5B%27platform109.halalkhor.info%27%5D'
 - name: 🇧🇷 BR 03 - port
   type: vless
   server: platform108.golnamakcert.top
@@ -45,7 +45,7 @@ proxies:
       Host: platform108.halalkhor.info
 - name: 🇧🇷 BR 04 - port
   type: vless
-  server: platform117.golnamakcert.top
+  server: platform108.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -53,9 +53,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform108
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform108.halalkhor.info
 - name: 🇧🇷 BR 05 - port
   type: vless
   server: platform108.golnamakcert.top
@@ -71,7 +71,7 @@ proxies:
       Host: platform108.halalkhor.info
 - name: 🇧🇷 BR 06 - port
   type: vless
-  server: platform106.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -79,12 +79,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform107
     headers:
-      Host: platform106.halalkhor.info
+      Host: platform107.halalkhor.info
 - name: 🇧🇷 BR 07 - port
   type: vless
-  server: platform106.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -92,9 +92,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform107
     headers:
-      Host: platform106.halalkhor.info
+      Host: platform107.halalkhor.info
 - name: 🇧🇷 BR 08 - port
   type: vless
   server: platform107.golnamakcert.top
@@ -110,7 +110,7 @@ proxies:
       Host: platform107.halalkhor.info
 - name: 🇧🇷 BR 09 - port
   type: vless
-  server: platform107.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -118,12 +118,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform107
+    path: /platform102
     headers:
-      Host: platform107.halalkhor.info
+      Host: platform102.halalkhor.info
 - name: 🇧🇷 BR 10 - port
   type: vless
-  server: platform103.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -131,9 +131,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform102
     headers:
-      Host: platform103.halalkhor.info
+      Host: platform102.halalkhor.info
 - name: 🇧🇷 BR 11 - port
   type: vless
   server: platform117.golnamakcert.top
@@ -149,7 +149,7 @@ proxies:
       Host: platform117.halalkhor.info
 - name: 🇧🇷 BR 12 - port
   type: vless
-  server: platform102.golnamakcert.top
+  server: platform113.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -157,12 +157,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform113
     headers:
-      Host: platform102.halalkhor.info
+      Host: platform113.halalkhor.info
 - name: 🇧🇷 BR 13 - port
   type: vless
-  server: platform107.golnamakcert.top
+  server: platform115.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -170,12 +170,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform107
+    path: /platform115
     headers:
-      Host: platform107.halalkhor.info
+      Host: '%5B%27platform115.halalkhor.info%27%5D'
 - name: 🇧🇷 BR 14 - port
   type: vless
-  server: platform107.golnamakcert.top
+  server: platform108.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -183,10 +183,114 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform107
+    path: /platform108
     headers:
-      Host: platform107.golnamakcert.top
+      Host: platform108.halalkhor.info
 - name: 🇧🇷 BR 15 - port
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇧🇷 BR 16 - port
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇧🇷 BR 17 - port
+  type: vless
+  server: platform113.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: '%5B%27platform113.halalkhor.info%27%5D'
+- name: 🇧🇷 BR 18 - port
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇧🇷 BR 19 - port
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇧🇷 BR 20 - port
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇧🇷 BR 21 - port
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇧🇷 BR 22 - port
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇧🇷 BR 23 - port
   type: vless
   server: platform102.golnamakcert.top
   port: 80
@@ -199,6 +303,19 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
+- name: 🇧🇷 BR 24 - port
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -219,6 +336,15 @@ proxy-groups:
   - 🇧🇷 BR 13 - port
   - 🇧🇷 BR 14 - port
   - 🇧🇷 BR 15 - port
+  - 🇧🇷 BR 16 - port
+  - 🇧🇷 BR 17 - port
+  - 🇧🇷 BR 18 - port
+  - 🇧🇷 BR 19 - port
+  - 🇧🇷 BR 20 - port
+  - 🇧🇷 BR 21 - port
+  - 🇧🇷 BR 22 - port
+  - 🇧🇷 BR 23 - port
+  - 🇧🇷 BR 24 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -239,5 +365,14 @@ proxy-groups:
   - 🇧🇷 BR 13 - port
   - 🇧🇷 BR 14 - port
   - 🇧🇷 BR 15 - port
+  - 🇧🇷 BR 16 - port
+  - 🇧🇷 BR 17 - port
+  - 🇧🇷 BR 18 - port
+  - 🇧🇷 BR 19 - port
+  - 🇧🇷 BR 20 - port
+  - 🇧🇷 BR 21 - port
+  - 🇧🇷 BR 22 - port
+  - 🇧🇷 BR 23 - port
+  - 🇧🇷 BR 24 - port
 rules:
 - MATCH,PROXIES

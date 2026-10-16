@@ -8,7 +8,9 @@
         "auto",
         "🇨🇾 CY 01 - port",
         "🇨🇾 CY 02 - port",
-        "🇨🇾 CY 03 - port"
+        "🇨🇾 CY 03 - port",
+        "🇨🇾 CY 04 - port",
+        "🇨🇾 CY 05 - port"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "outbounds": [
         "🇨🇾 CY 01 - port",
         "🇨🇾 CY 02 - port",
-        "🇨🇾 CY 03 - port"
+        "🇨🇾 CY 03 - port",
+        "🇨🇾 CY 04 - port",
+        "🇨🇾 CY 05 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
