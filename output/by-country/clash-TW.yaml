@@ -5,6 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - port
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: safari
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - port
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: qq
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - port
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -14,7 +38,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - port
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - port
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -31,6 +55,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - port
   - 🇹🇼 中国台湾 (Taiwan) 02 - port
+  - 🇹🇼 中国台湾 (Taiwan) 03 - port
+  - 🇹🇼 中国台湾 (Taiwan) 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +64,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - port
   - 🇹🇼 中国台湾 (Taiwan) 02 - port
+  - 🇹🇼 中国台湾 (Taiwan) 03 - port
+  - 🇹🇼 中国台湾 (Taiwan) 04 - port
 rules:
 - MATCH,PROXIES
