@@ -5,32 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - port
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 02 - port
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: 94.143.231.146
-- name: 🇩🇪 德国 (Germany) 02 - port
-  type: vless
-  server: 104.18.0.181
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
+      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 03 - port
   type: vless
   server: 157.230.101.36
@@ -47,45 +41,46 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇩🇪 德国 (Germany) 04 - port
   type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  server: 167.172.165.106
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: edge.yzkvm.top
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ov-germany1.09vpn.com
+      Host: edge.yzkvm.top
 - name: 🇩🇪 德国 (Germany) 05 - port
   type: vless
-  server: cdn.topingr.ir
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn.topingr.ir
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
-    path: /gropcdn
+    path: /
     headers:
-      Host: cdn.topingr.ir
+      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 06 - port
   type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: 91.107.247.173
 - name: 🇩🇪 德国 (Germany) 07 - port
   type: vless
   server: 91.107.247.173
@@ -99,17 +94,17 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
+      Host: 91.107.247.173
 - name: 🇩🇪 德国 (Germany) 08 - port
   type: ss
-  server: ge.duravexv.ir
-  port: 1020
-  cipher: aes-256-gcm
-  password: n8hbhzdagj1o7m0v
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
   udp: true
 - name: 🇩🇪 德国 (Germany) 09 - port
   type: vless
-  server: sino.bestsellers1.site
+  server: 91.107.247.173
   port: 2083
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
@@ -123,33 +118,54 @@ proxies:
       Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 10 - port
   type: vless
-  server: cdn.topingr.ir
+  server: 162.159.153.4
   port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn.topingr.ir
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /gropcdn
+    path: /
     headers:
-      Host: cdn.topingr.ir
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 - name: 🇩🇪 德国 (Germany) 11 - port
   type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  server: 37.120.222.70
+  port: 8082
+  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: sino.bestsellers1.site
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 - name: 🇩🇪 德国 (Germany) 12 - port
+  type: vless
+  server: 104.18.0.181
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 13 - port
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - port
   type: vless
   server: cdn.topingr.ir
   port: 443
@@ -163,21 +179,26 @@ proxies:
     path: /gropcdn
     headers:
       Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 13 - port
+- name: 🇩🇪 德国 (Germany) 15 - port
   type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 14 - port
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 16 - port
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 17 - port
   type: vless
   server: 199.232.78.159
   port: 443
@@ -191,35 +212,7 @@ proxies:
     path: /
     headers:
       Host: copy_az_channel_NUFiLTER_i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 15 - port
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 16 - port
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 17 - port
+- name: 🇩🇪 德国 (Germany) 18 - port
   type: vless
   server: 199.232.78.128
   port: 443
@@ -233,23 +226,9 @@ proxies:
     path: /?TELEGRAM----------TOOTFFARANGI
     headers:
       Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 18 - port
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 19 - port
   type: vless
-  server: wwww.qarvian.ir
+  server: 146.75.59.186
   port: 443
   uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
   udp: true
@@ -260,49 +239,15 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
+      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
 - name: 🇩🇪 德国 (Germany) 20 - port
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 21 - port
-  type: vless
-  server: undef.network
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 22 - port
-  type: vless
-  server: cdn.topingr.ir
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.topingr.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 23 - port
   type: vless
   server: wwww.qarvian.ir
   port: 443
@@ -316,144 +261,20 @@ proxies:
     path: /?TELEGRAM----------TOOTFFARANGI
     headers:
       Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 24 - port
+- name: 🇩🇪 德国 (Germany) 22 - port
   type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 25 - port
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 26 - port
-  type: ss
-  server: 31.76.11.83
-  port: 15731
-  cipher: chacha20-ietf-poly1305
-  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 27 - port
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: 94.143.231.146
-- name: 🇩🇪 德国 (Germany) 28 - port
-  type: vless
-  server: eu02.123450908.xyz
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /vless/
     headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 29 - port
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 30 - port
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 31 - port
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 32 - port
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 33 - port
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇩🇪 德国 (Germany) 34 - port
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 35 - port
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 36 - port
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 23 - port
   type: vless
   server: 146.75.59.186
   port: 443
@@ -467,56 +288,228 @@ proxies:
     path: /?TELEGRAM--------TOOTFFARANGI
     headers:
       Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 24 - port
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇩🇪 德国 (Germany) 25 - port
+  type: vless
+  server: sdcdethyerft.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sdcdethyerft.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: sdcdethyerft.localip.ir
+- name: 🇩🇪 德国 (Germany) 26 - port
+  type: vless
+  server: cdn.topingr.ir
+  port: 443
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.topingr.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: cdn.topingr.ir
+- name: 🇩🇪 德国 (Germany) 27 - port
+  type: vless
+  server: hoert1rert.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 28 - port
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 29 - port
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 30 - port
+  type: vless
+  server: ops5788tugfuy.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops5788tugfuy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 31 - port
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 32 - port
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 33 - port
+  type: vless
+  server: ops4asfseretuiyk.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops4asfseretuiyk.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops4asfseretuiyk.localip.ir
+- name: 🇩🇪 德国 (Germany) 34 - port
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 35 - port
+  type: vless
+  server: 43.249.72.254
+  port: 443
+  uuid: a7cb5ab8-46c1-4d9a-b260-8c2a8c16f49f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: default.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: henzoo.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 36 - port
+  type: vless
+  server: 172.67.130.187
+  port: 2083
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fans.liverpool.qzz.io
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: fans.liverpool.qzz.io
 - name: 🇩🇪 德国 (Germany) 37 - port
   type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  server: cdn.topingr.ir
+  port: 443
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
+  servername: cdn.topingr.ir
   network: ws
   ws-opts:
-    path: /
+    path: /gropcdn
     headers:
-      Host: sino.bestsellers1.site
+      Host: cdn.topingr.ir
 - name: 🇩🇪 德国 (Germany) 38 - port
   type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  server: hikvision-plus.com
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
+  servername: uwu.blueknightnet.qzz.io
   network: ws
   ws-opts:
-    path: /
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: sino.bestsellers1.site
+      Host: uwu.blueknightnet.qzz.io
 - name: 🇩🇪 德国 (Germany) 39 - port
   type: vless
-  server: 84.32.100.149
+  server: cdn.topingr.ir
   port: 443
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: tcpde7.figurapn.ru
-  client-fingerprint: chrome
+  servername: cdn.topingr.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: cdn.topingr.ir
 - name: 🇩🇪 德国 (Germany) 40 - port
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 41 - port
   type: vless
-  server: 91.107.247.173
+  server: sino.bestsellers1.site
   port: 2083
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
@@ -529,35 +522,26 @@ proxies:
     headers:
       Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 42 - port
-  type: vless
-  server: cdn.topingr.ir
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.topingr.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 43 - port
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 44 - port
   type: ss
   server: 213.202.208.199
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: 🇩🇪 德国 (Germany) 45 - port
+- name: 🇩🇪 德国 (Germany) 43 - port
+  type: vless
+  server: freesocks.work
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 44 - port
   type: vless
   server: sino.bestsellers1.site
   port: 2083
@@ -571,59 +555,83 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 45 - port
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM------TOOTFFARANGI
+    headers:
+      Host: copy_az_channel_NUFiLTER_i.global.ssl.fastly.net.
 - name: 🇩🇪 德国 (Germany) 46 - port
-  type: vmess
-  server: 31.76.11.83
-  port: 22366
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 47 - port
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 48 - port
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 49 - port
-  type: vmess
-  server: n5.mobiza.ir
-  port: 2095
-  uuid: 26e1faba-1d7e-4777-a62d-7ad463f5abe8
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: edge.yzkvm.top
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: www.asamping.ir
-- name: 🇩🇪 德国 (Germany) 50 - port
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 47 - port
   type: vless
-  server: cdn.topingr.ir
+  server: wwww.qarvian.ir
   port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn.topingr.ir
+  servername: google.com
   network: ws
   ws-opts:
-    path: /gropcdn
+    path: /
     headers:
-      Host: cdn.topingr.ir
+      Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 48 - port
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 49 - port
+  type: vless
+  server: fretegtrthgbfd.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fretegtrthgbfd.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fretegtrthgbfd.localip.ir
+- name: 🇩🇪 德国 (Germany) 50 - port
+  type: vless
+  server: wwww.qarvian.ir
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
 - name: 🇩🇪 德国 (Germany) 51 - port
   type: vless
   server: 91.107.247.173
@@ -637,33 +645,178 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 91.107.247.173
+      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 52 - port
   type: vless
-  server: freesocks.work
-  port: 2052
-  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
+  server: 188.114.98.0
+  port: 443
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn.topingr.ir
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /gropcdn
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: cdn.topingr.ir
 - name: 🇩🇪 德国 (Germany) 53 - port
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  server: fert1qswdfegrthy.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert1qswdfegrthy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert1qswdfegrthy.localip.ir
+- name: 🇩🇪 德国 (Germany) 54 - port
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 55 - port
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 56 - port
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇩🇪 德国 (Germany) 57 - port
+  type: vless
+  server: hoert1rert.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 58 - port
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 59 - port
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 60 - port
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 61 - port
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 62 - port
+  type: vless
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇩🇪 德国 (Germany) 63 - port
+  type: ss
+  server: 31.76.11.83
+  port: 15731
+  cipher: chacha20-ietf-poly1305
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 64 - port
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
 proxy-groups:
 - name: PROXIES
   type: select
@@ -722,6 +875,17 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 51 - port
   - 🇩🇪 德国 (Germany) 52 - port
   - 🇩🇪 德国 (Germany) 53 - port
+  - 🇩🇪 德国 (Germany) 54 - port
+  - 🇩🇪 德国 (Germany) 55 - port
+  - 🇩🇪 德国 (Germany) 56 - port
+  - 🇩🇪 德国 (Germany) 57 - port
+  - 🇩🇪 德国 (Germany) 58 - port
+  - 🇩🇪 德国 (Germany) 59 - port
+  - 🇩🇪 德国 (Germany) 60 - port
+  - 🇩🇪 德国 (Germany) 61 - port
+  - 🇩🇪 德国 (Germany) 62 - port
+  - 🇩🇪 德国 (Germany) 63 - port
+  - 🇩🇪 德国 (Germany) 64 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -780,5 +944,16 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 51 - port
   - 🇩🇪 德国 (Germany) 52 - port
   - 🇩🇪 德国 (Germany) 53 - port
+  - 🇩🇪 德国 (Germany) 54 - port
+  - 🇩🇪 德国 (Germany) 55 - port
+  - 🇩🇪 德国 (Germany) 56 - port
+  - 🇩🇪 德国 (Germany) 57 - port
+  - 🇩🇪 德国 (Germany) 58 - port
+  - 🇩🇪 德国 (Germany) 59 - port
+  - 🇩🇪 德国 (Germany) 60 - port
+  - 🇩🇪 德国 (Germany) 61 - port
+  - 🇩🇪 德国 (Germany) 62 - port
+  - 🇩🇪 德国 (Germany) 63 - port
+  - 🇩🇪 德国 (Germany) 64 - port
 rules:
 - MATCH,PROXIES
