@@ -7,9 +7,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ 01 - port",
-        "🇨🇿 CZ 02 - port",
-        "🇨🇿 CZ 03 - port",
-        "🇨🇿 CZ 04 - port"
+        "🇨🇿 CZ 02 - port"
       ]
     },
     {
@@ -17,9 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 CZ 01 - port",
-        "🇨🇿 CZ 02 - port",
-        "🇨🇿 CZ 03 - port",
-        "🇨🇿 CZ 04 - port"
+        "🇨🇿 CZ 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

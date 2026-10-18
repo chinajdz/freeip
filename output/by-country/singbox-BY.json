@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇧🇾 BY 01 - port",
-        "🇧🇾 BY 02 - port",
-        "🇧🇾 BY 03 - port"
+        "🇧🇾 BY 02 - port"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇾 BY 01 - port",
-        "🇧🇾 BY 02 - port",
-        "🇧🇾 BY 03 - port"
+        "🇧🇾 BY 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
