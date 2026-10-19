@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇻🇳 VN 01 - port",
-        "🇻🇳 VN 02 - port",
-        "🇻🇳 VN 03 - port"
+        "🇻🇳 VN 02 - port"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇻🇳 VN 01 - port",
-        "🇻🇳 VN 02 - port",
-        "🇻🇳 VN 03 - port"
+        "🇻🇳 VN 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
