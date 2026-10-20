@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - port
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 02 - port
+  type: vless
+  server: 80.240.18.227
+  port: 10051
+  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇨🇭 CH 03 - port
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -22,11 +43,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇭 CH 01 - port
+  - 🇨🇭 CH 02 - port
+  - 🇨🇭 CH 03 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 CH 01 - port
+  - 🇨🇭 CH 02 - port
+  - 🇨🇭 CH 03 - port
 rules:
 - MATCH,PROXIES

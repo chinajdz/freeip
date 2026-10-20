@@ -4,47 +4,47 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - port
+- name: 🇸🇨 SC 01 - port
   type: vless
-  server: 172.67.168.158
-  port: 2087
-  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
+  server: 154.218.15.250
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vn11vina.210z.dev
+  servername: proxy-1cu.pages.dev
   network: ws
   ws-opts:
-    path: /vlessvina
+    path: /
     headers:
-      Host: vn11vina.210z.dev
-- name: 🇻🇳 VN 02 - port
+      Host: proxy-1cu.pages.dev
+- name: 🇸🇨 SC 02 - port
   type: vless
-  server: 172.67.168.158
+  server: 154.211.8.227
   port: 2087
-  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vn11vina.210z.dev
+  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
-    path: /vlessvina
+    path: /
     headers:
-      Host: vn11vina.210z.dev
+      Host: proxy-34l.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - port
-  - 🇻🇳 VN 02 - port
+  - 🇸🇨 SC 01 - port
+  - 🇸🇨 SC 02 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - port
-  - 🇻🇳 VN 02 - port
+  - 🇸🇨 SC 01 - port
+  - 🇸🇨 SC 02 - port
 rules:
 - MATCH,PROXIES
