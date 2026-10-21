@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - port
   type: ss
-  server: 202.50.253.54
-  port: 19999
+  server: 57.131.48.45
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - port
   type: ss
@@ -20,12 +20,26 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 (Italy) 03 - port
   type: ss
-  server: 57.131.48.45
-  port: 8388
+  server: 202.50.253.54
+  port: 19999
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - port
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 05 - port
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 06 - port
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -33,16 +47,44 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 05 - port
+- name: 🇮🇹 意大利 (Italy) 07 - port
   type: ss
-  server: 202.50.253.63
+  server: 202.50.253.99
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 (Italy) 06 - port
+- name: 🇮🇹 意大利 (Italy) 08 - port
   type: ss
-  server: 202.50.253.36
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 09 - port
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 10 - port
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 11 - port
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 12 - port
+  type: ss
+  server: 202.50.253.81
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -58,6 +100,12 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - port
   - 🇮🇹 意大利 (Italy) 05 - port
   - 🇮🇹 意大利 (Italy) 06 - port
+  - 🇮🇹 意大利 (Italy) 07 - port
+  - 🇮🇹 意大利 (Italy) 08 - port
+  - 🇮🇹 意大利 (Italy) 09 - port
+  - 🇮🇹 意大利 (Italy) 10 - port
+  - 🇮🇹 意大利 (Italy) 11 - port
+  - 🇮🇹 意大利 (Italy) 12 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +117,11 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - port
   - 🇮🇹 意大利 (Italy) 05 - port
   - 🇮🇹 意大利 (Italy) 06 - port
+  - 🇮🇹 意大利 (Italy) 07 - port
+  - 🇮🇹 意大利 (Italy) 08 - port
+  - 🇮🇹 意大利 (Italy) 09 - port
+  - 🇮🇹 意大利 (Italy) 10 - port
+  - 🇮🇹 意大利 (Italy) 11 - port
+  - 🇮🇹 意大利 (Italy) 12 - port
 rules:
 - MATCH,PROXIES
