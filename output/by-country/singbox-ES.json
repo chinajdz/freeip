@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - port"
+        "🇪🇸 西班牙 (Spain) 01 - port",
+        "🇪🇸 西班牙 (Spain) 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - port"
+        "🇪🇸 西班牙 (Spain) 01 - port",
+        "🇪🇸 西班牙 (Spain) 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
