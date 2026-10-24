@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - port",
-        "🇨🇾 CY 02 - port"
+        "🇨🇳 CN 01 - port",
+        "🇨🇳 CN 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - port",
-        "🇨🇾 CY 02 - port"
+        "🇨🇳 CN 01 - port",
+        "🇨🇳 CN 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

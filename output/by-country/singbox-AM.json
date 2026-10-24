@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - port"
+        "🇦🇲 AM 01 - port",
+        "🇦🇲 AM 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - port"
+        "🇦🇲 AM 01 - port",
+        "🇦🇲 AM 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
