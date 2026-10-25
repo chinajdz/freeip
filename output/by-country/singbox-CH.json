@@ -8,8 +8,7 @@
         "auto",
         "🇨🇭 CH 01 - port",
         "🇨🇭 CH 02 - port",
-        "🇨🇭 CH 03 - port",
-        "🇨🇭 CH 04 - port"
+        "🇨🇭 CH 03 - port"
       ]
     },
     {
@@ -18,8 +17,7 @@
       "outbounds": [
         "🇨🇭 CH 01 - port",
         "🇨🇭 CH 02 - port",
-        "🇨🇭 CH 03 - port",
-        "🇨🇭 CH 04 - port"
+        "🇨🇭 CH 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
