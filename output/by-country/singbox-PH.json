@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇵🇭 PH 01 - port",
-        "🇵🇭 PH 02 - port"
+        "🇵🇭 PH 02 - port",
+        "🇵🇭 PH 03 - port",
+        "🇵🇭 PH 04 - port"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇭 PH 01 - port",
-        "🇵🇭 PH 02 - port"
+        "🇵🇭 PH 02 - port",
+        "🇵🇭 PH 03 - port",
+        "🇵🇭 PH 04 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
