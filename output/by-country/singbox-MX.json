@@ -8,7 +8,12 @@
         "auto",
         "🇲🇽 MX 01 - port",
         "🇲🇽 MX 02 - port",
-        "🇲🇽 MX 03 - port"
+        "🇲🇽 MX 03 - port",
+        "🇲🇽 MX 04 - port",
+        "🇲🇽 MX 05 - port",
+        "🇲🇽 MX 06 - port",
+        "🇲🇽 MX 07 - port",
+        "🇲🇽 MX 08 - port"
       ]
     },
     {
@@ -17,7 +22,12 @@
       "outbounds": [
         "🇲🇽 MX 01 - port",
         "🇲🇽 MX 02 - port",
-        "🇲🇽 MX 03 - port"
+        "🇲🇽 MX 03 - port",
+        "🇲🇽 MX 04 - port",
+        "🇲🇽 MX 05 - port",
+        "🇲🇽 MX 06 - port",
+        "🇲🇽 MX 07 - port",
+        "🇲🇽 MX 08 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -5,15 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - port
-  type: ss
-  server: 64.177.90.30
-  port: 8388
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-  udp: true
-- name: 🇲🇽 MX 02 - port
   type: vless
   server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 02 - port
+  type: vless
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -29,6 +31,51 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 04 - port
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 05 - port
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 06 - port
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 07 - port
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 08 - port
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 149.104.90.21
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +84,11 @@ proxy-groups:
   - 🇲🇽 MX 01 - port
   - 🇲🇽 MX 02 - port
   - 🇲🇽 MX 03 - port
+  - 🇲🇽 MX 04 - port
+  - 🇲🇽 MX 05 - port
+  - 🇲🇽 MX 06 - port
+  - 🇲🇽 MX 07 - port
+  - 🇲🇽 MX 08 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +97,10 @@ proxy-groups:
   - 🇲🇽 MX 01 - port
   - 🇲🇽 MX 02 - port
   - 🇲🇽 MX 03 - port
+  - 🇲🇽 MX 04 - port
+  - 🇲🇽 MX 05 - port
+  - 🇲🇽 MX 06 - port
+  - 🇲🇽 MX 07 - port
+  - 🇲🇽 MX 08 - port
 rules:
 - MATCH,PROXIES
