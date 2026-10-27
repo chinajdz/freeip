@@ -15,7 +15,7 @@ proxies:
   servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 02 - port
   type: vless
-  server: ph001.zestapp778.com
+  server: 130.94.53.51
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,6 +33,24 @@ proxies:
   servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 04 - port
   type: vless
+  server: ph001.zestapp778.com
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 05 - port
+  type: vless
+  server: 130.94.53.51
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 06 - port
+  type: vless
   server: 130.94.53.51
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -49,6 +67,8 @@ proxy-groups:
   - 🇵🇭 PH 02 - port
   - 🇵🇭 PH 03 - port
   - 🇵🇭 PH 04 - port
+  - 🇵🇭 PH 05 - port
+  - 🇵🇭 PH 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +78,7 @@ proxy-groups:
   - 🇵🇭 PH 02 - port
   - 🇵🇭 PH 03 - port
   - 🇵🇭 PH 04 - port
+  - 🇵🇭 PH 05 - port
+  - 🇵🇭 PH 06 - port
 rules:
 - MATCH,PROXIES
