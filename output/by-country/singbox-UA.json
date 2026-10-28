@@ -8,7 +8,8 @@
         "auto",
         "🇺🇦 UA 01 - port",
         "🇺🇦 UA 02 - port",
-        "🇺🇦 UA 03 - port"
+        "🇺🇦 UA 03 - port",
+        "🇺🇦 UA 04 - port"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "outbounds": [
         "🇺🇦 UA 01 - port",
         "🇺🇦 UA 02 - port",
-        "🇺🇦 UA 03 - port"
+        "🇺🇦 UA 03 - port",
+        "🇺🇦 UA 04 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
