@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - port"
+        "🇮🇩 ID 01 - port",
+        "🇮🇩 ID 02 - port",
+        "🇮🇩 ID 03 - port",
+        "🇮🇩 ID 04 - port",
+        "🇮🇩 ID 05 - port",
+        "🇮🇩 ID 06 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - port"
+        "🇮🇩 ID 01 - port",
+        "🇮🇩 ID 02 - port",
+        "🇮🇩 ID 03 - port",
+        "🇮🇩 ID 04 - port",
+        "🇮🇩 ID 05 - port",
+        "🇮🇩 ID 06 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
