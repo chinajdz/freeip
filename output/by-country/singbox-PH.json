@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - port"
+        "🇵🇭 PH 01 - port",
+        "🇵🇭 PH 02 - port",
+        "🇵🇭 PH 03 - port",
+        "🇵🇭 PH 04 - port",
+        "🇵🇭 PH 05 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - port"
+        "🇵🇭 PH 01 - port",
+        "🇵🇭 PH 02 - port",
+        "🇵🇭 PH 03 - port",
+        "🇵🇭 PH 04 - port",
+        "🇵🇭 PH 05 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
