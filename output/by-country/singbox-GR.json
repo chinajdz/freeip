@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 GR 01 - port"
+        "🇬🇷 GR 01 - port",
+        "🇬🇷 GR 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 GR 01 - port"
+        "🇬🇷 GR 01 - port",
+        "🇬🇷 GR 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
