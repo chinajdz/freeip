@@ -5,21 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
+  type: ss
+  server: 130.49.189.54
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - port
   type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: swz.proxyplankton.ru
-- name: 🇷🇺 俄罗斯 (Russia) 02 - port
-  type: ss
-  server: 159.194.251.76
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+  type: vless
+  server: 186.246.9.29
+  port: 443
+  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
+  servername: wordpress.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - port
   - 🇷🇺 俄罗斯 (Russia) 02 - port
+  - 🇷🇺 俄罗斯 (Russia) 03 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - port
   - 🇷🇺 俄罗斯 (Russia) 02 - port
+  - 🇷🇺 俄罗斯 (Russia) 03 - port
 rules:
 - MATCH,PROXIES
