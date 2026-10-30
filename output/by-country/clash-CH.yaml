@@ -6,13 +6,16 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - port
   type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: swz.proxyplankton.ru
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - port
   type: vless
   server: 208.69.78.217
@@ -27,40 +30,41 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - port
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 199.232.78.159
+  port: 443
+  uuid: c1a3a6ee-34d3-4fcd-8763-c2231adabed6
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lofinlaoijji.global.ssl.fastly.net
 - name: 🇨🇭 CH 04 - port
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 199.232.78.159
+  port: 443
+  uuid: c1a3a6ee-34d3-4fcd-8763-c2231adabed6
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lofinlaoijji.global.ssl.fastly.net
 - name: 🇨🇭 CH 05 - port
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: swz.proxyplankton.ru
 - name: 🇨🇭 CH 06 - port
   type: vless
   server: 208.69.78.217
@@ -84,8 +88,41 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇭 CH 08 - port
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 09 - port
+  type: vless
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇨🇭 CH 10 - port
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 11 - port
   type: ss
   server: 132.243.175.144
   port: 8388
@@ -105,6 +142,9 @@ proxy-groups:
   - 🇨🇭 CH 06 - port
   - 🇨🇭 CH 07 - port
   - 🇨🇭 CH 08 - port
+  - 🇨🇭 CH 09 - port
+  - 🇨🇭 CH 10 - port
+  - 🇨🇭 CH 11 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,5 +158,8 @@ proxy-groups:
   - 🇨🇭 CH 06 - port
   - 🇨🇭 CH 07 - port
   - 🇨🇭 CH 08 - port
+  - 🇨🇭 CH 09 - port
+  - 🇨🇭 CH 10 - port
+  - 🇨🇭 CH 11 - port
 rules:
 - MATCH,PROXIES
