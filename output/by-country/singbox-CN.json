@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - port"
+        "🇨🇳 CN 01 - port",
+        "🇨🇳 CN 02 - port",
+        "🇨🇳 CN 03 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - port"
+        "🇨🇳 CN 01 - port",
+        "🇨🇳 CN 02 - port",
+        "🇨🇳 CN 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
