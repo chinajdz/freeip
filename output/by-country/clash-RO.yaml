@@ -6,13 +6,29 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - port
   type: vless
-  server: 155.117.5.208
+  server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - port
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 03 - port
+  type: vless
+  server: 155.117.5.208
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 04 - port
   type: ss
   server: 194.68.44.42
   port: 64546
@@ -26,6 +42,8 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - port
   - 🇷🇴 RO 02 - port
+  - 🇷🇴 RO 03 - port
+  - 🇷🇴 RO 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -33,5 +51,7 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - port
   - 🇷🇴 RO 02 - port
+  - 🇷🇴 RO 03 - port
+  - 🇷🇴 RO 04 - port
 rules:
 - MATCH,PROXIES
