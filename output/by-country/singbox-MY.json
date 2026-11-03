@@ -6,22 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - port",
-        "🇱🇰 LK 02 - port",
-        "🇱🇰 LK 03 - port",
-        "🇱🇰 LK 04 - port",
-        "🇱🇰 LK 05 - port"
+        "🇲🇾 MY 01 - port",
+        "🇲🇾 MY 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - port",
-        "🇱🇰 LK 02 - port",
-        "🇱🇰 LK 03 - port",
-        "🇱🇰 LK 04 - port",
-        "🇱🇰 LK 05 - port"
+        "🇲🇾 MY 01 - port",
+        "🇲🇾 MY 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
