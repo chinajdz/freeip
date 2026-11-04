@@ -8,8 +8,7 @@
         "auto",
         "🇨🇳 CN 01 - port",
         "🇨🇳 CN 02 - port",
-        "🇨🇳 CN 03 - port",
-        "🇨🇳 CN 04 - port"
+        "🇨🇳 CN 03 - port"
       ]
     },
     {
@@ -18,8 +17,7 @@
       "outbounds": [
         "🇨🇳 CN 01 - port",
         "🇨🇳 CN 02 - port",
-        "🇨🇳 CN 03 - port",
-        "🇨🇳 CN 04 - port"
+        "🇨🇳 CN 03 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
