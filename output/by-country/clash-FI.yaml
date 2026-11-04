@@ -5,32 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - port
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: 185.4.115.149
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - port
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 03 - port
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -50,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - port
   - 🇫🇮 FI 02 - port
-  - 🇫🇮 FI 03 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - port
   - 🇫🇮 FI 02 - port
-  - 🇫🇮 FI 03 - port
 rules:
 - MATCH,PROXIES
