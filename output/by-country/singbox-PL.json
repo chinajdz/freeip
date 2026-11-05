@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - port"
+        "🇵🇱 PL 01 - port",
+        "🇵🇱 PL 02 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - port"
+        "🇵🇱 PL 01 - port",
+        "🇵🇱 PL 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },

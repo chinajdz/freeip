@@ -4,27 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - port
-  type: vmess
-  server: 95.182.115.178
-  port: 443
-  uuid: db753334-5fd1-472b-b3e0-458bc2189c58
-  alterId: 0
-  cipher: auto
+- name: 🇷🇴 RO 01 - port
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - port
+  - 🇷🇴 RO 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - port
+  - 🇷🇴 RO 01 - port
 rules:
 - MATCH,PROXIES
