@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - port",
-        "🇷🇺 俄罗斯 (Russia) 02 - port"
+        "🇨🇿 CZ 01 - port",
+        "🇨🇿 CZ 02 - port",
+        "🇨🇿 CZ 03 - port",
+        "🇨🇿 CZ 04 - port"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - port",
-        "🇷🇺 俄罗斯 (Russia) 02 - port"
+        "🇨🇿 CZ 01 - port",
+        "🇨🇿 CZ 02 - port",
+        "🇨🇿 CZ 03 - port",
+        "🇨🇿 CZ 04 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
