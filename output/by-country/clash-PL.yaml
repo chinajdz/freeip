@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - port
   type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 02 - port
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
-- name: 🇵🇱 PL 03 - port
-  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -41,21 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - port
-  type: vless
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 05 - port
+- name: 🇵🇱 PL 02 - port
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -71,9 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - port
   - 🇵🇱 PL 02 - port
-  - 🇵🇱 PL 03 - port
-  - 🇵🇱 PL 04 - port
-  - 🇵🇱 PL 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,8 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - port
   - 🇵🇱 PL 02 - port
-  - 🇵🇱 PL 03 - port
-  - 🇵🇱 PL 04 - port
-  - 🇵🇱 PL 05 - port
 rules:
 - MATCH,PROXIES
