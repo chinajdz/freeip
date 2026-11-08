@@ -6,12 +6,33 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
   type: ss
+  server: 38.60.223.125
+  port: 13108
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - port
+  type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - port
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+  type: vless
+  server: 185.86.147.175
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bhjolq0d0l.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
+- name: 🇷🇺 俄罗斯 (Russia) 04 - port
   type: vless
   server: xsru2.freeddns.org
   port: 443
@@ -25,14 +46,7 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 03 - port
-  type: ss
-  server: 38.60.223.125
-  port: 13108
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - port
+- name: 🇷🇺 俄罗斯 (Russia) 05 - port
   type: vless
   server: 177.202.73.151
   port: 443
@@ -46,7 +60,35 @@ proxies:
     path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
       Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 05 - port
+- name: 🇷🇺 俄罗斯 (Russia) 06 - port
+  type: vless
+  server: 185.86.147.175
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bhjolq0d0l.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
+- name: 🇷🇺 俄罗斯 (Russia) 07 - port
+  type: vless
+  server: 185.86.147.175
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bhjolq0d0l.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
+- name: 🇷🇺 俄罗斯 (Russia) 08 - port
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -63,6 +105,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - port
   - 🇷🇺 俄罗斯 (Russia) 04 - port
   - 🇷🇺 俄罗斯 (Russia) 05 - port
+  - 🇷🇺 俄罗斯 (Russia) 06 - port
+  - 🇷🇺 俄罗斯 (Russia) 07 - port
+  - 🇷🇺 俄罗斯 (Russia) 08 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +118,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - port
   - 🇷🇺 俄罗斯 (Russia) 04 - port
   - 🇷🇺 俄罗斯 (Russia) 05 - port
+  - 🇷🇺 俄罗斯 (Russia) 06 - port
+  - 🇷🇺 俄罗斯 (Russia) 07 - port
+  - 🇷🇺 俄罗斯 (Russia) 08 - port
 rules:
 - MATCH,PROXIES
