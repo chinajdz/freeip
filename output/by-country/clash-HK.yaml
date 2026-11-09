@@ -33,7 +33,7 @@ proxies:
   ws-opts:
     path: /arki
     headers:
-      Host: ''
+      Host: 47.244.120.197
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - port
   type: vmess
   server: 47.244.120.197

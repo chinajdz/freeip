@@ -6,13 +6,12 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - port
   type: vless
-  server: 5.75.197.39
-  port: 2088
-  uuid: ae23e87e-0764-4152-901c-1427b00c81b7
+  server: 167.233.129.126
+  port: 2474
+  uuid: 287db857-de04-4212-bd69-5d14083e340e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: seo.nexun.ir
 - name: 🇩🇪 德国 (Germany) 02 - port
   type: ss
   server: 185.226.172.8
@@ -28,34 +27,43 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇩🇪 德国 (Germany) 04 - port
-  type: vless
-  server: 167.233.129.126
-  port: 2474
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 05 - port
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 06 - port
   type: ss
   server: 23.157.88.43
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇩🇪 德国 (Germany) 06 - port
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 07 - port
+  type: vless
+  server: 188.130.154.204
+  port: 443
+  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn2.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: cdn2.zovip2.ir
+- name: 🇩🇪 德国 (Germany) 08 - port
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -69,42 +77,7 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 08 - port
-  type: vless
-  server: cdn.kavosiprotocol.shop
-  port: 443
-  uuid: 5bb1fda3-0b8a-41d5-a803-b48e180ad718
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.kavosiprotocol.shop
-  network: ws
-  ws-opts:
-    path: /@KVPROTOCOlVPN--@KVPROTOCOlVPN--@KVPROTOCOlVPN--@KVPROTOCOlVPN--ws/s_48738e13cc
-    headers:
-      Host: cdn.kavosiprotocol.shop
 - name: 🇩🇪 德国 (Germany) 09 - port
-  type: vless
-  server: 177.202.73.151
-  port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lvi.su
-  network: ws
-  ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
-    headers:
-      Host: lvi.su
-- name: 🇩🇪 德国 (Germany) 10 - port
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 11 - port
   type: vless
   server: 57.129.41.216
   port: 80
@@ -117,39 +90,14 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 12 - port
+- name: 🇩🇪 德国 (Germany) 10 - port
   type: ss
   server: 57.129.83.85
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 13 - port
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 14 - port
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - port
-  type: vless
-  server: 5.75.197.39
-  port: 2088
-  uuid: ae23e87e-0764-4152-901c-1427b00c81b7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: seo.nexun.ir
-- name: 🇩🇪 德国 (Germany) 16 - port
+- name: 🇩🇪 德国 (Germany) 11 - port
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -163,7 +111,27 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 17 - port
+- name: 🇩🇪 德国 (Germany) 12 - port
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 13 - port
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - port
   type: vmess
   server: 2.26.54.200
   port: 8018
@@ -178,6 +146,27 @@ proxies:
     path: /websocket/transfer/gayporn
     headers:
       Host: shit.67133767.xyz
+- name: 🇩🇪 德国 (Germany) 15 - port
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 16 - port
+  type: vless
+  server: 177.202.73.151
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lvi.su
+  network: ws
+  ws-opts:
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+    headers:
+      Host: lvi.su
 proxy-groups:
 - name: PROXIES
   type: select
@@ -199,7 +188,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 14 - port
   - 🇩🇪 德国 (Germany) 15 - port
   - 🇩🇪 德国 (Germany) 16 - port
-  - 🇩🇪 德国 (Germany) 17 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -221,6 +209,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 14 - port
   - 🇩🇪 德国 (Germany) 15 - port
   - 🇩🇪 德国 (Germany) 16 - port
-  - 🇩🇪 德国 (Germany) 17 - port
 rules:
 - MATCH,PROXIES
