@@ -8,7 +8,9 @@
         "auto",
         "🇷🇴 RO 01 - port",
         "🇷🇴 RO 02 - port",
-        "🇷🇴 RO 03 - port"
+        "🇷🇴 RO 03 - port",
+        "🇷🇴 RO 04 - port",
+        "🇷🇴 RO 05 - port"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "outbounds": [
         "🇷🇴 RO 01 - port",
         "🇷🇴 RO 02 - port",
-        "🇷🇴 RO 03 - port"
+        "🇷🇴 RO 03 - port",
+        "🇷🇴 RO 04 - port",
+        "🇷🇴 RO 05 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
