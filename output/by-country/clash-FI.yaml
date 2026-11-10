@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - port
   type: vless
-  server: 109.120.134.181
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇫🇮 FI 02 - port
-  type: vless
   server: 138.124.49.108
   port: 8443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
@@ -32,9 +18,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 03 - port
+- name: 🇫🇮 FI 02 - port
   type: vless
-  server: 138.124.124.157
+  server: 109.120.134.181
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
@@ -46,21 +32,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 04 - port
-  type: vless
-  server: 146.103.118.189
-  port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nl2.574ck.xyz
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 FI 05 - port
+- name: 🇫🇮 FI 03 - port
   type: vmess
   server: 65.108.240.210
   port: 39018
@@ -70,33 +42,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇮 FI 04 - port
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - port
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - port
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - port
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 08 - port
   type: vless
   server: 146.103.118.189
   port: 443
@@ -110,7 +82,21 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 FI 09 - port
+- name: 🇫🇮 FI 07 - port
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 08 - port
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -136,7 +122,6 @@ proxy-groups:
   - 🇫🇮 FI 06 - port
   - 🇫🇮 FI 07 - port
   - 🇫🇮 FI 08 - port
-  - 🇫🇮 FI 09 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,6 +135,5 @@ proxy-groups:
   - 🇫🇮 FI 06 - port
   - 🇫🇮 FI 07 - port
   - 🇫🇮 FI 08 - port
-  - 🇫🇮 FI 09 - port
 rules:
 - MATCH,PROXIES
