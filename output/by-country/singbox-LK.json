@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇱🇰 LK 01 - port",
-        "🇱🇰 LK 02 - port",
-        "🇱🇰 LK 03 - port"
+        "🇱🇰 LK 02 - port"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇰 LK 01 - port",
-        "🇱🇰 LK 02 - port",
-        "🇱🇰 LK 03 - port"
+        "🇱🇰 LK 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
