@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇬🇷 GR 01 - port",
-        "🇬🇷 GR 02 - port",
-        "🇬🇷 GR 03 - port"
+        "🇬🇷 GR 02 - port"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇷 GR 01 - port",
-        "🇬🇷 GR 02 - port",
-        "🇬🇷 GR 03 - port"
+        "🇬🇷 GR 02 - port"
       ],
       "url": "https://www.google.com/generate_204"
     },
