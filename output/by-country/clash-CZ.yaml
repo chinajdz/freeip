@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - port
+  type: vless
+  server: 172.67.148.84
+  port: 443
+  uuid: 51c5a070-39ff-43fd-ac53-597bb7e7ff3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+  network: ws
+  ws-opts:
+    path: /9dffa10cc2d3b317?ed=2560
+    headers:
+      Host: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+- name: 🇨🇿 CZ 02 - port
   type: ss
   server: 194.87.233.93
   port: 46190
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - port
+  - 🇨🇿 CZ 02 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - port
+  - 🇨🇿 CZ 02 - port
 rules:
 - MATCH,PROXIES
