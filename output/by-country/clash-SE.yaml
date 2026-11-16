@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - port
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 SE 02 - port
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -15,19 +22,12 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
-- name: 🇸🇪 SE 02 - port
-  type: ss
-  server: 194.59.250.52
-  port: 18501
-  cipher: aes-128-gcm
-  password: 517403753b63fd4fac88986bf98b11e0
-  udp: true
 - name: 🇸🇪 SE 03 - port
   type: ss
-  server: 138.199.55.243
-  port: 19999
+  server: 70.34.212.124
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 04 - port
   type: vless
@@ -42,6 +42,13 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - port
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +58,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - port
   - 🇸🇪 SE 03 - port
   - 🇸🇪 SE 04 - port
+  - 🇸🇪 SE 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +68,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - port
   - 🇸🇪 SE 03 - port
   - 🇸🇪 SE 04 - port
+  - 🇸🇪 SE 05 - port
 rules:
 - MATCH,PROXIES
