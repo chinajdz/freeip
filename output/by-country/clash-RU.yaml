@@ -1,0 +1,107 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇷🇺 俄罗斯 (Russia) 01 - port
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - port
+  type: vless
+  server: vellum.merlano.monster
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sequoia.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: vellum.merlano.monster
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+  type: vless
+  server: quay.gerqix.online
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: quay.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de2/stream
+    headers:
+      Host: quay.gerqix.online
+- name: 🇷🇺 俄罗斯 (Russia) 04 - port
+  type: vless
+  server: 147.45.175.81
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 05 - port
+  type: vless
+  server: foliose.merlano.monster
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: foliose.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de2/stream
+    headers:
+      Host: foliose.merlano.monster
+- name: 🇷🇺 俄罗斯 (Russia) 06 - port
+  type: vless
+  server: ws3.falmero.store
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: canvas.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: ws3.falmero.store
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇷🇺 俄罗斯 (Russia) 01 - port
+  - 🇷🇺 俄罗斯 (Russia) 02 - port
+  - 🇷🇺 俄罗斯 (Russia) 03 - port
+  - 🇷🇺 俄罗斯 (Russia) 04 - port
+  - 🇷🇺 俄罗斯 (Russia) 05 - port
+  - 🇷🇺 俄罗斯 (Russia) 06 - port
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇺 俄罗斯 (Russia) 01 - port
+  - 🇷🇺 俄罗斯 (Russia) 02 - port
+  - 🇷🇺 俄罗斯 (Russia) 03 - port
+  - 🇷🇺 俄罗斯 (Russia) 04 - port
+  - 🇷🇺 俄罗斯 (Russia) 05 - port
+  - 🇷🇺 俄罗斯 (Russia) 06 - port
+rules:
+- MATCH,PROXIES

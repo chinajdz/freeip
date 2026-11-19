@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (家宽) - port
+- name: 🇮🇩 ID 01 - port
   type: vless
-  server: 172.64.88.98
+  server: 104.17.3.81
   port: 443
-  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
+  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  servername: natan.srpcom.cloud
   network: ws
   ws-opts:
-    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    path: /vlessws
     headers:
-      Host: 1v5vp5jsq611a5dsm.pages.dev
+      Host: natan.srpcom.cloud
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (家宽) - port
+  - 🇮🇩 ID 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (家宽) - port
+  - 🇮🇩 ID 01 - port
 rules:
 - MATCH,PROXIES
