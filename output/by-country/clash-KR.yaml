@@ -69,6 +69,19 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 06 - port
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +92,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - port
   - 🇰🇷 韩国 (South Korea) 04 - port
   - 🇰🇷 韩国 (South Korea) 05 - port
+  - 🇰🇷 韩国 (South Korea) 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,5 +103,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - port
   - 🇰🇷 韩国 (South Korea) 04 - port
   - 🇰🇷 韩国 (South Korea) 05 - port
+  - 🇰🇷 韩国 (South Korea) 06 - port
 rules:
 - MATCH,PROXIES
