@@ -13,6 +13,20 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 02 - port
   type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
+- name: 🇸🇪 SE 03 - port
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -24,6 +38,31 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 04 - port
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 05 - port
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +70,9 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - port
   - 🇸🇪 SE 02 - port
+  - 🇸🇪 SE 03 - port
+  - 🇸🇪 SE 04 - port
+  - 🇸🇪 SE 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +80,8 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - port
   - 🇸🇪 SE 02 - port
+  - 🇸🇪 SE 03 - port
+  - 🇸🇪 SE 04 - port
+  - 🇸🇪 SE 05 - port
 rules:
 - MATCH,PROXIES
