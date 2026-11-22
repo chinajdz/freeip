@@ -13,18 +13,17 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 02 - port
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 16f63796-3e98-5a7b-b016-540ce6e79007
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: se1.v2less.site
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: se1.v2less.site
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,6 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - port
+  type: vless
+  server: 216.23.93.27
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
+  type: vless
+  server: 43.129.80.179
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - port
   type: ss
   server: 213.176.92.148
   port: 40647
@@ -17,11 +60,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - port
+  - 🇭🇰 中国香港 (Hong Kong) 02 - port
+  - 🇭🇰 中国香港 (Hong Kong) 03 - port
+  - 🇭🇰 中国香港 (Hong Kong) 04 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - port
+  - 🇭🇰 中国香港 (Hong Kong) 02 - port
+  - 🇭🇰 中国香港 (Hong Kong) 03 - port
+  - 🇭🇰 中国香港 (Hong Kong) 04 - port
 rules:
 - MATCH,PROXIES
