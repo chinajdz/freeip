@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - port
   type: vless
-  server: 13.143.239.66
+  server: 188.214.37.231
   port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30
-  servername: b3cd32g.es9.h1clayd.click
-  client-fingerprint: firefox
+  servername: lagoon.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de5/stream
+    headers:
+      Host: lagoon.gerqix.online
 proxy-groups:
 - name: PROXIES
   type: select
