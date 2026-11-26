@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - port
+- name: 🇱🇻 LV 01 - port
   type: vless
-  server: 188.214.37.231
-  port: 443
-  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  server: 213.183.45.23
+  port: 8450
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lagoon.gerqix.online
+  servername: fonts.plumstatic.com
   network: ws
   ws-opts:
-    path: /api/de5/stream
+    path: /ws
     headers:
-      Host: lagoon.gerqix.online
+      Host: 213.183.45.23
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - port
+  - 🇱🇻 LV 01 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - port
+  - 🇱🇻 LV 01 - port
 rules:
 - MATCH,PROXIES
