@@ -5,10 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - port
+  type: ss
+  server: waic.pro.main.sys-metric-report.com
+  port: 28014
+  cipher: chacha20-ietf-poly1305
+  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   udp: true
@@ -16,31 +23,16 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /arki
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - port
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
   type: ss
   server: 213.176.92.148
   port: 40647
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
   udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - port
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-    headers:
-      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - port
   type: vmess
   server: 47.86.90.31
@@ -57,21 +49,6 @@ proxies:
     path: /ws-vmess
     headers:
       Host: bywxdhirqkjj8xaz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - port
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 156.245.232.239
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +58,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - port
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
   - 🇭🇰 中国香港 (Hong Kong) 04 - port
-  - 🇭🇰 中国香港 (Hong Kong) 05 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,6 +67,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - port
   - 🇭🇰 中国香港 (Hong Kong) 03 - port
   - 🇭🇰 中国香港 (Hong Kong) 04 - port
-  - 🇭🇰 中国香港 (Hong Kong) 05 - port
 rules:
 - MATCH,PROXIES
