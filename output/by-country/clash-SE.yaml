@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - port
   type: vmess
-  server: 62.93.166.184
+  server: leviko-se3307.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -17,7 +17,7 @@ proxies:
   servername: ''
 - name: 🇸🇪 SE 02 - port
   type: vmess
-  server: leviko-se3307.shopingggg.ir
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -46,6 +46,28 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - port
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 06 - port
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +77,8 @@ proxy-groups:
   - 🇸🇪 SE 02 - port
   - 🇸🇪 SE 03 - port
   - 🇸🇪 SE 04 - port
+  - 🇸🇪 SE 05 - port
+  - 🇸🇪 SE 06 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +88,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - port
   - 🇸🇪 SE 03 - port
   - 🇸🇪 SE 04 - port
+  - 🇸🇪 SE 05 - port
+  - 🇸🇪 SE 06 - port
 rules:
 - MATCH,PROXIES
