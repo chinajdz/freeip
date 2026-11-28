@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - port
   type: vless
-  server: ns2.irts.lol
+  server: 37.202.228.219
   port: 443
   uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
   udp: true
