@@ -5,25 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - port
-  type: vless
-  server: 37.202.228.219
-  port: 443
-  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ns2.irts.lol
+- name: 🇮🇷 IR 02 - port
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇷 IR 03 - port
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - port
+  - 🇮🇷 IR 02 - port
+  - 🇮🇷 IR 03 - port
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - port
+  - 🇮🇷 IR 02 - port
+  - 🇮🇷 IR 03 - port
 rules:
 - MATCH,PROXIES

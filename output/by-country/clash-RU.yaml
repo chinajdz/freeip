@@ -5,29 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - port
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - port
-  type: ss
-  server: 194.87.69.12
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - port
   type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  server: xinnusvpn.duckdns.org
+  port: 8443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - port
+  servername: xinnusvpn.duckdns.org
+  network: ws
+  ws-opts:
+    path: /wsnl
+    headers:
+      Host: xinnusvpn.duckdns.org
+- name: 🇷🇺 俄罗斯 (Russia) 02 - port
   type: vless
   server: 136.148.83.70
   port: 443
@@ -36,7 +27,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - port
+- name: 🇷🇺 俄罗斯 (Russia) 03 - port
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 04 - port
   type: vless
   server: 136.148.83.69
   port: 443
@@ -45,15 +45,22 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 06 - port
+- name: 🇷🇺 俄罗斯 (Russia) 05 - port
   type: vless
-  server: 136.148.83.71
+  server: 136.148.83.70
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wccfu-ru-79dc.my-fade.cloud
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - port
+  type: ss
+  server: 194.87.69.12
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
